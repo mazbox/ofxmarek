@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>ofxWebSimpleGuiToo</title>
+<link type="text/css" rel="stylesheet" media="all" href="gui.css" /> 
+<script language="javascript" src="jquery-1.4.2.js"></script>
+<script language="javascript" src="oo.js"></script>
+<script language="javascript" src="gui.js"></script>
+
+<script language="javascript">
+
+
+$(document).ready(function() {	
+	$.getJSON("/control", function(gui) { 
+		$("body").append('<li id="pages"></li>');
+		for(i = 1; i < gui.length; i++) {
+			var pageId = 'page'+i;
+			$("#pages").append('<h2>'+gui[i].name+'</h2><ul id="'+pageId+'"></ul>');
+			for(j = 0; j < gui[i].controls.length; j++) {
+				createControl(gui[i].controls[j], pageId);
+	
+			}
+		}
+	});
+});
+
+
+</script>
+
+
+</head>
+<body>
+
+<h1>ofx Control</h1>
+<hr />
+
+</body>
+</html>

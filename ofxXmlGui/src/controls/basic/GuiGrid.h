@@ -1,0 +1,148 @@
+/*
+ *  GuiGrid.h
+ *  Gui
+ *
+ *  Created by Marek Bereza on 05/05/2010.
+ *  Copyright 2010 Marek Bereza. All rights reserved.
+ *
+ */
+#include "GuiControl.h"
+#include "GridSequence.h"
+
+class GuiGrid: public GuiControl {
+public:
+	int steps;
+	int notes;
+	int bgColor;
+	int noteColor;
+	int lineColor;
+	
+	bool adding;
+	float position;
+	string bgImgUrl;
+	ofImage *bg;
+	
+	void setup() {
+		position = 0;
+		adding = true;
+		notes = 7;
+		steps = 16;
+		width = 200;
+		height = 100;
+		lineColor = 0xFFFFFF;
+		noteColor = 0xCC0000;
+		bgColor = 0;
+		bgImgUrl = "";
+		bg = NULL;
+		value = new GridSequence();
+		((GridSequence*)value)->toggle(1,1,1);
+	}
+	
+	void load() {
+		bg = resources->getImage(bgImgUrl);
+		if(bg!=NULL) {
+			scalable = false;
+			width = bg->getWidth();
+			height = bg->getHeight();
+		}
+	}
+	
+	void draw() {
+		
+		if(bg!=NULL) {
+			ofSetHexColor(0xFFFFFF);
+			bg->draw(x, y);
+		} else {
+			
+			ofSetHexColor(bgColor);
+			ofRect(x, y, width, height);
+			
+			ofNoFill();
+			ofSetHexColor(lineColor);
+			ofRect(x, y, width, height);
+		}
+		
+		float cellHeight = (float)height/notes;
+		float cellWidth = (float)width/steps;
+		
+		
+
+		ofFill();
+		ofSetHexColor(noteColor);
+		((GridSequence*)value)->rewind();
+		Note *n;
+		while((n = ((GridSequence*)value)->nextNote())!=NULL) {
+			ofRect(x + cellWidth*n->step, y + cellHeight*n->note, cellWidth, cellHeight);
+		}
+
+			
+
+		ofSetHexColor(lineColor);
+		for(int i = 1; i < notes; i++) {
+			ofLine(x, y + cellHeight*i, x+width, y + cellHeight*i);
+		}
+		
+		for(int i = 1; i < steps; i++) {
+			ofLine(x + cellWidth*i, y, x + cellWidth*i, y +height);
+		}
+		ofLine(x+width*position, y, x+width*position, y*height);
+		ofFill();
+		 
+	}
+		
+		
+	
+	
+	bool touchDown(int _x, int _y, int touchId) {
+		
+		float cellHeight = (float)height/notes;
+		float cellWidth = (float)width/steps;
+		int note = _y - y;
+		note /= cellHeight;
+		int step = _x - x;
+		step /= cellWidth;
+		
+		if(note<notes && step<steps) {
+			adding = ((GridSequence*)value)->toggle(note, step, 255);
+		}
+		return true;
+	}
+	
+	bool touchMoved(int _x, int _y, int touchId) {
+		float cellHeight = (float)height/notes;
+		float cellWidth = (float)width/steps;
+		int note = _y - y;
+		note /= cellHeight;
+		int step = _x - x;
+		step /= cellWidth;
+		if(note<notes && step<steps) {
+			((GridSequence*)value)->set(note, step, 255, adding);
+		}
+		return true;
+	}
+	
+	
+	
+	
+	
+	virtual vector<ParameterInfo> getParameterInfo() {
+		vector<ParameterInfo> params;
+		
+		params.push_back(ParameterInfo("notes", "notes", "intfield", &notes));
+		params.push_back(ParameterInfo("steps", "steps", "intfield", &steps));
+		params.push_back(ParameterInfo("BG Color", "bgColor", "colorpicker", &bgColor));
+		params.push_back(ParameterInfo("Line Color", "lineColor", "colorpicker", &lineColor));
+		params.push_back(ParameterInfo("Note Color", "noteColor", "colorpicker", &noteColor));
+		params.push_back(ParameterInfo("BG Image", "bg", "file", &bgImgUrl));
+		return params;
+	}
+	
+	string valueToString() { return ((GridSequence*)value)->valueToString(); }
+	void valueFromString(string inp) { 
+		if(value!=NULL) delete ((GridSequence*)value);
+		value = new GridSequence();
+		((GridSequence*)value)->valueFromString(inp);
+		
+	}
+
+};

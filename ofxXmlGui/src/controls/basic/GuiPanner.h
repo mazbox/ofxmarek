@@ -1,0 +1,58 @@
+/*
+ *  GuiPanner.h
+ *  Snowboard
+ *
+ *  Created by Marek Bereza on 09/12/2010.
+ *  Copyright 2010 Marek Bereza. All rights reserved.
+ *
+ 
+ *  TODO: Doesn't work for graphics files, just plain colours I don't think.
+ */
+
+
+#pragma once
+
+#include "GuiSlider.h"
+class GuiPanner: public GuiSlider {
+public:
+	
+	
+	void draw() {
+		
+		if(sliderBG!=NULL) {
+			ofSetHexColor(0xFFFFFF);
+			sliderBG->draw(x, y);
+		} else {
+			ofSetHexColor(bgColor);
+			ofRect(x, y, width, height);
+		}
+		
+		float val = (fval(value)-min)/(max-min);
+		
+		if(sliderFG!=NULL) {
+			ofSetHexColor(0xFFFFFF);
+			ofPoint abs = getAbsoluteCoords();
+			if(vertical) maskOn(abs.x, abs.y + height-height*val, width, height*val);
+			else maskOn(abs.x, abs.y, width*val, height);
+			sliderFG->draw(x, y);
+			maskOff();
+		} else {
+			ofSetHexColor(fgColor);
+			
+			if(vertical) ofRect(x, y+height + height/2 -height*val , width, height*val - height/2);
+			else ofRect(x+width/2, y, width*val - width/2, height);
+		}
+		
+		if(sliderHandle!=NULL) {
+			ofSetHexColor(0xFFFFFF);
+			if(vertical) {
+				
+				sliderHandle->draw(x, y + (1.f - val)*(height - sliderHandle->getHeight()));
+			} else {
+				sliderHandle->draw(x+val*(width-sliderHandle->getWidth()), y);
+			}
+		}
+		ofSetColor(255, 255, 255);
+		drawLabel();
+	}
+};

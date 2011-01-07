@@ -1,0 +1,1 @@
+This is the standard ofTrueTypeFont with the exception that it can do different letter spacings and word spacings.

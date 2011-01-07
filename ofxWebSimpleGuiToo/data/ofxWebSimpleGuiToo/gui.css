@@ -1,0 +1,101 @@
+
+body {
+	background-color:black;
+	color:white;
+	font-family:Helvetica,arial,sans-serif;
+
+}
+h1 {
+	font-weight:normal;
+	font-size:1.5em;
+	color:#AA0000;
+}
+h2 {
+	font-weight:normal;
+	font-size:1.2em;
+	color:#AA0000;
+}
+
+h3 {
+	font-weight:normal;
+	font-size:0.8em;
+	color:white;
+}
+
+.control {
+	border:1px red solid;
+	cursor:pointer;
+}
+	
+.SliderInt, .SliderFloat, .Slider2d, .Slider3d, .ColorPicker {
+	width:200px;
+}
+
+.SliderInt, .SliderFloat, .Toggle, .Button {
+	height:30px;
+}
+.Slider2D {
+	height:200px;
+}
+
+.Slider3D {
+	height:90px;
+}
+	
+	
+.xHandle,
+.yHandle,
+.zHandle,
+.Slider2dHandle,
+.SliderHandle {
+	background-color:#00FF00;
+}
+
+.ColorPicker {
+	height: 120px;
+}
+.Toggle, .Button {
+	width:60px;
+}
+		
+.xHandle,
+.yHandle,
+.zHandle,
+.rHandle,
+.gHandle,
+.bHandle,
+.aHandle,
+.sliderHandle {
+	height:30px;
+	position:absolute;
+	width:4px;
+}
+
+.slider2DHandle {
+	height:4px;
+	position:absolute;
+	width:4px;
+}
+
+.rHandle { background-color:#FF0000; }
+.gHandle { background-color:#00FF00; margin-top:30px;}
+.bHandle { background-color:#0000FF; margin-top:60px;}
+.aHandle { background-color:#FFFFFF; margin-top:90px;}
+
+.yHandle { margin-top:30px;}
+.zHandle { margin-top:60px;}
+
+.Title {
+	border:none;
+}
+
+
+ul {
+	border-top:1px white solid;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+li ul li {
+	padding-left:1em;
+}
