@@ -1,0 +1,5 @@
+This add-on allows you to lock a program to a single computer. It currently only works on a mac. It tests the hardware UUID of the machine.
+
+To use it you must define UUID_STRING and then include the header file, "ofxUUIDLock.h". Then in testApp::setup() call "ofxCheckUUID();". This will quite the program if the UUID doesn't match whatever is defined as UUID_STRING.
+
+You can also set the default UUID in the ofxCheckUUID() file if you're using it for a suite of programs.

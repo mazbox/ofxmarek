@@ -1,0 +1,54 @@
+WARNING: alpha quality software. Use at your own risk!
+
+mareklib
+========
+Some bits and pieces of useful code.
+
+ofxJSON
+======= 
+Nice wrapper for jsoncpp, lets you use associative array notation to read and write
+json.
+
+ofxOBJModel
+===========
+Lets you read and write OBJ models.
+
+ofxQTKitVideoExporter
+=====================
+Lets you export video straight to quicktime (mac only)
+
+ofxTrueTypeFont
+===============
+Duplicate of ofTrueTypeFont class, but lets you control things like letter spacing 
+and word spacing.
+
+ofxWebServer
+============
+Wrapper for mongoose mini web server. Can serve up static pages as well as providing
+an interface for C++ url handling.
+
+ofxWebSimpleGuiToo
+==================
+Sits on top of ofxSimpleGuiToo (requires ofxWebServer) to provide a web interface to
+your ofxSimpleGuiToo
+
+ofxXmlGui
+=========
+Fully customizable GUI library with over 20 kinds of widget. The gui can describe 
+itself totally using XML, there's also an interface builder for it (but it's broken)
+
+ofxTimeline
+===========
+Lets you build variables that change over time, 
+
+ofxQRDecoder
+============
+QR code decoder using openCV
+
+ofxUUIDLock
+===========
+Locks a program to a specific hardware UUID (mac only) (meh)
+
+ofxSTLModel
+===========
+Load/save STL 3D models.
