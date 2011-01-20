@@ -155,14 +155,14 @@ int frame = 1;
 void ofxQTKitVideoExporter::addFrame(unsigned char *data) {
 
 	BOOL hasAlpha = glType==GL_RGBA || glType==GL_RGBA16;
-
+/*
 	ofImage img;
 	img.setUseTexture(false);
 	img.allocate(width, height, OF_IMAGE_COLOR);
 	img.setFromPixels(data, width, height, OF_IMAGE_COLOR, true);
 	img.saveImage("output/000"+ofToString(frame++)+".tiff");
-	
-/*
+	*/
+
 	int bitsPerSample = 8;
 	if(glType==GL_RGBA16 || glType==GL_RGB16) {
 		bitsPerSample = 16;
@@ -196,7 +196,7 @@ void ofxQTKitVideoExporter::addFrame(unsigned char *data) {
 	//[imageRep release];
 	//[byteData release];
 	[pool release];
- */
+ 
 }
 
 
