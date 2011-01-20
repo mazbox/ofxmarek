@@ -9,7 +9,7 @@
 
 
 #include "GuiControl.h"
-
+#include "GuiTitle.h"
 #include "GuiButton.h"
 #include "GuiSlider.h"
 #include "GuiToggle.h"
@@ -34,7 +34,6 @@
 #include "GuiList.h"
 #include "GuiGrid.h"
 #include "GuiPanner.h"
-
 #include "GuiContainer.h"
 
 #define BEGIN_REGISTRY() static bool firstCall = true; if(0) {}
@@ -52,6 +51,7 @@ BEGIN_REGISTRY()
 	
 	REGISTER("container", GuiContainer)
 	REGISTER("button", GuiButton)
+	REGISTER("title", GuiTitle)
 	REGISTER("slider", GuiSlider)
 	REGISTER("toggle", GuiToggle)
 	REGISTER("knob", GuiKnob)

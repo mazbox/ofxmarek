@@ -60,6 +60,7 @@ bool FileSystem::isDir(string s) {
 }
 
 string FileSystem::getPath(int i) {
+	if(i==-1) return cwd();
 	return getPath(folder[i]);
 	
 }

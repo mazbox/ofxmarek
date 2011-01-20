@@ -139,3 +139,70 @@ void ofxTimelineValue::print() {
 		printf("Time: %f  Value %f\n", points[i].time, points[i].value);
 	}
 }
+
+double ofxTimelineValue::ofMapd(double value, double inputMin, double inputMax, double outputMin, double outputMax) {
+	
+	if (ABS(inputMin - inputMax) < FLT_EPSILON){
+		ofLog(OF_LOG_WARNING, "ofMap: avoiding possible divide by zero, check inputMin and inputMax\n");
+		return outputMin;
+	} else {
+		double outVal = ((value - inputMin) / (inputMax - inputMin) * (outputMax - outputMin) + outputMin);
+		
+		return outVal;
+	}
+	
+}
+
+
+void ofxTimelineValue::exportSVG(string file) {
+	string xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
+	xml += "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.0//EN\" \"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd\">\n";
+	
+	int docWidth = 1024;
+	int docHeight = 768;
+	
+	float minVal = getMinValue();
+	float maxVal = getMaxValue();
+	double minTime = getStartTime();
+	double maxTime = getEndTime();
+	string dat = "";
+	int verticalPadding = 30;
+	for(int i = 0; i < docWidth; i++) {
+		double time = ofMapd(i, 0, docWidth, minTime, maxTime);
+		float val = ofMapd(getValueInLoop(time), minVal, maxVal, docHeight-verticalPadding*2, verticalPadding);
+		dat += ofToString(i) + "," + ofToString(val) + " ";
+	}
+	
+	// comma separate x and y, space separate coords
+
+	
+	xml += "<svg version=\"1.0\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\""+ofToString(docWidth)+"px\" height=\""+ofToString(docHeight)+"px\" viewBox=\"0 0 "+ofToString(docWidth)+" "+ofToString(docHeight)+"\" enable-background=\"new 0 0 "+ofToString(docWidth)+" "+ofToString(docHeight)+"\" xml:space=\"preserve\">\n";
+
+	// label
+	xml += "<text transform=\"matrix(1 0 0 1 100, 20)\" font-family=\"'courier'\" font-size=\"14\">"+name+"</text>\n";
+	
+	// min max labels
+	xml += "<text transform=\"matrix(1 0 0 1 20, "+ofToString(verticalPadding+5)+")\" font-family=\"'courier'\" font-size=\"14\">"+ofToString(maxVal,3)+"</text>\n";
+	xml += "<text transform=\"matrix(1 0 0 1 20, "+ofToString(5+ docHeight - 2*verticalPadding)+")\" font-family=\"'courier'\" font-size=\"14\">"+ofToString(minVal,3)+"</text>\n";
+	
+	// top and bottom lines
+	string topLineCoords = "90,"+ofToString(verticalPadding)+" "+ofToString(docWidth)+","+ofToString(verticalPadding);
+	xml += "<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" points=\""+topLineCoords+"\" />\n";
+	
+	string bottomLineCoords = "90,"+ofToString(docHeight - 2*verticalPadding)+" "+ofToString(docWidth)+","+ofToString(docHeight  - 2*verticalPadding);
+	xml += "<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" points=\""+bottomLineCoords+"\" />\n";
+	
+	xml += "<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" points=\""+dat+"\" />\n";
+	
+	xml += "</svg>";
+	
+	
+	ofstream out; 
+	out.open(ofToDataPath(file).c_str(), ios::out); 
+	out << xml << endl; 
+	out.close();
+	
+	
+	
+	
+}

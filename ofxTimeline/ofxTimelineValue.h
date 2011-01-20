@@ -45,8 +45,9 @@ public:
 
 	void printInfo();
 	
-	
-	
+	double ofMapd(double value, double inputMin, double inputMax, double outputMin, double outputMax);
+	// exports an graph as an svg file 
+	void exportSVG(string file);
 
 	/** 
 	 * Adds the values of another timeline to this one.
@@ -57,7 +58,6 @@ public:
 	
 protected:
 	
-	//vector<ofxTimelinePoint<float> > points;
 	
 	
 private:

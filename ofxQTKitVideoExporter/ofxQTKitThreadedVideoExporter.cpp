@@ -31,7 +31,15 @@ void ofxQTKitThreadedVideoExporter::setup(
 	} else {
 		fbo.setup(width, height, glType, false);//useMSAA?ofxFbo::maxSamples():0);
 	}
-	int bpp = format==GL_RGB?3:4;
+	int bpp = 3;
+	switch(glType) {
+		case GL_RGB: bpp = 3; break;
+		case GL_RGBA: bpp = 4; break;
+		case GL_RGB16: bpp = 6; break;
+		case GL_RGBA16: bpp = 8; break;
+		case GL_RGB32F_ARB: bpp = 12; break;
+		case GL_RGBA32F_ARB: bpp = 16; break;
+	}
 	pixels = new unsigned char[width*height*bpp];
 	this->glType = glType;
 }
@@ -55,7 +63,7 @@ void ofxQTKitThreadedVideoExporter::end() {
 	
 	
 
-	ofxFbo *theFBO = &fbo;
+	ofFbo *theFBO = &fbo;
 	if(useMSAA) {
 		theFBO = &fbo2;
 		fbo2.begin();
@@ -77,7 +85,12 @@ void ofxQTKitThreadedVideoExporter::end() {
 	theFBO->bind();
 	glReadBuffer(GL_COLOR_ATTACHMENT0_EXT);
 	
-	glReadPixels(0, 0, theFBO->getWidth(), theFBO->getHeight(), glType, GL_UNSIGNED_BYTE, pixels);
+	int glTypeR = GL_RGB;
+
+	if(glType==GL_RGBA) {
+		glTypeR = GL_RGBA;
+	}
+	glReadPixels(0, 0, theFBO->getWidth(), theFBO->getHeight(), glTypeR, GL_UNSIGNED_BYTE, pixels);
 	theFBO->unbind();
 	
 	// start the thread again

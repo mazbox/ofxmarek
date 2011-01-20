@@ -130,6 +130,10 @@ public:
 	// like a hidden input in html forms.
 	void makeHidden();
 	
+	// if you want to use this element without a container
+	// you can use this method to provide a resources handler.
+	void setResources(GuiResources *res);
+	
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //		MEANT TO BE PRIVATE, THESE THINGS BELOW
 ///////////////////////////////////////////////////////////////////////////////////////////////	

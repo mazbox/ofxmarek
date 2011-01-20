@@ -34,6 +34,13 @@ ofxTimelineGui::ofxTimelineGui() {
 void ofxTimelineGui::togglePlaying() {
 	playing ^= true;
 }
+string ofxTimelineGui::getCurrentTimelineName() {
+	if(currentTimelineIndex!=-1 && currentTimelineIndex<graphList->items.size()) {
+		return graphList->items[currentTimelineIndex];
+	} else {
+		return "";
+	}
+}
 void ofxTimelineGui::draw(ofEventArgs &e) {
 	
 	ofNoFill();

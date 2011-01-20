@@ -23,7 +23,7 @@ public:
 	bool isDir(int i);	
 	bool isDir(string s);
 	
-	string getPath(int i);
+	string getPath(int i = -1);
 	string getPath(string s);
 	
 	/**

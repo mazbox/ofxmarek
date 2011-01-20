@@ -10,11 +10,11 @@
  *  Copyright 2010 Marek Bereza. All rights reserved.
  *
  */
-#include "ofxThread.h"
-#include "ofxQTKitVideoExporter.h"
-#include "ofxFbo.h"
 
-class ofxQTKitThreadedVideoExporter: public ofxThread {
+#include "ofxQTKitVideoExporter.h"
+
+
+class ofxQTKitThreadedVideoExporter: public ofThread {
 public:
 
 	void setup(
@@ -50,7 +50,7 @@ private:
 	ofxQTKitVideoExporter exporter;
 	int glType;
 	bool useMSAA;
-	ofxFbo fbo;
-	ofxFbo fbo2;
+	ofFbo fbo;
+	ofFbo fbo2;
 	
 };

@@ -7,6 +7,9 @@
  *
  */
 #pragma once
+
+#define OFXXMLGUI_DEFAULT_BG_COLOR 0x1E2832
+
 #include "GuiControl.h"
 #include "ofxXmlSettings.h"
 #include "GuiResources.h"
@@ -100,6 +103,18 @@ public:
 	void addListener(GuiListener *_listener);
 	
 	/**
+	 * Automatically creates xml files of all control values
+	 * every time you change them, and loads them on startup if
+	 * the file exists.
+	 */
+	virtual void enableAutoSave(string file = "values.xml");
+	
+	/** 
+	 * Disable auto save (off by default) 
+	 */
+	virtual void disableAutoSave();
+	
+	/**
 	 * These methods propagate mouse actions and key
 	 * presses to the child controls 
 	 */
@@ -140,7 +155,7 @@ public:
 	vector<GuiControl*> getControls();
 	
 	
-	
+	int numChildren();
 protected:
 	
 	// adds an actual element to the gui
@@ -151,15 +166,17 @@ protected:
 	GuiResources res;
 	ofImage *bg;
 	string bgImgUrl;
+	int layoutType;
 private:
-		
+	bool autoSaving;
+	string autoSaveFile;
 	bool adjustingBounds;
 	
 	
 	int indexForControl(GuiControl *c);	
 	
 	bool movable;
-	int layoutType;
+	
 	int layoutOffsetX;
 	int layoutOffsetY;
 	

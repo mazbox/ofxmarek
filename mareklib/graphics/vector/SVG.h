@@ -10,7 +10,6 @@
 
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
-#include "ofxVectorMath.h"
 #include "ofxDisplayList.h"
 
 

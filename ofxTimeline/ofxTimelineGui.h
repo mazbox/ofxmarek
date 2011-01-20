@@ -26,6 +26,7 @@ public:
 	
 	bool isEnabled();
 	
+	string getCurrentTimelineName();
 	
 	void togglePlaying();
 

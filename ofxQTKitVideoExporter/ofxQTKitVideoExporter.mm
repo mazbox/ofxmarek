@@ -91,7 +91,7 @@ void ofxQTKitVideoExporter::setup(int width, int height, int glType, float fps, 
 	[movie setAttribute:[NSNumber numberWithBool:YES] forKey:QTMovieEditableAttribute];
 	
 	NSSize imageSize = NSMakeSize(width, height);
-	
+	printf("Inited movie maker with %d %d\n", width, height);
 	
 	image = [[NSImage alloc] initWithSize:imageSize];
 	
@@ -150,18 +150,35 @@ void ofxQTKitVideoExporter::addFrameFromNSImage(NSImage *img) {
 		 withAttributes:videoFormatDict];
 	}
 }
-
+int frame = 1;
 
 void ofxQTKitVideoExporter::addFrame(unsigned char *data) {
 
+	BOOL hasAlpha = glType==GL_RGBA || glType==GL_RGBA16;
+
+	ofImage img;
+	img.setUseTexture(false);
+	img.allocate(width, height, OF_IMAGE_COLOR);
+	img.setFromPixels(data, width, height, OF_IMAGE_COLOR, true);
+	img.saveImage("output/000"+ofToString(frame++)+".tiff");
+	
+/*
+	int bitsPerSample = 8;
+	if(glType==GL_RGBA16 || glType==GL_RGB16) {
+		bitsPerSample = 16;
+	}
+	if(glType==GL_RGB32F_ARB) {
+		bitsPerSample = 32;
+	}
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	if(imageRep!=nil) [image removeRepresentation:imageRep];
+
 	imageRep =  [[NSBitmapImageRep alloc]
 								initWithBitmapDataPlanes:(unsigned char **)&data
 								pixelsWide:width pixelsHigh:height
-								bitsPerSample:8
-								samplesPerPixel:glType==GL_RGBA?4:3  // or 4 with alpha
-								hasAlpha:glType==GL_RGBA?YES:NO
+								bitsPerSample:bitsPerSample
+								samplesPerPixel:hasAlpha?4:3  // or 4 with alpha
+								hasAlpha:glType==hasAlpha
 								isPlanar:NO
 								colorSpaceName:NSCalibratedRGBColorSpace
 								bitmapFormat:0
@@ -179,6 +196,7 @@ void ofxQTKitVideoExporter::addFrame(unsigned char *data) {
 	//[imageRep release];
 	//[byteData release];
 	[pool release];
+ */
 }
 
 

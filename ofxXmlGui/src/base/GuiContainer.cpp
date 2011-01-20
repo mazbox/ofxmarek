@@ -22,6 +22,7 @@ GuiContainer::GuiContainer() {
 	resources = &res;
 	bg = NULL;
 	bgImgUrl = "";
+	autoSaving = false;
 }
 /**
  * This points a control's value to the parameter
@@ -72,6 +73,16 @@ bool guiFileExists(string filename) {
 	return stat(filename.c_str(),&stFileInfo)==0; 
 }
 
+
+void GuiContainer::enableAutoSave(string file) {
+	autoSaving = true;
+	autoSaveFile = file;
+	loadValues(file);
+}
+
+void GuiContainer::disableAutoSave() {
+	autoSaving = false;
+}
 /**
  * loads an xml file with the values specified
  * in the file. If the file doesn't exist, it just
@@ -183,7 +194,8 @@ void GuiContainer::draw() {
 		ofSetHexColor(0xFFFFFF);
 		bg->draw(0, 0);
 	} else {
-		ofSetColor(30, 40, 50);
+
+		ofSetHexColor(OFXXMLGUI_DEFAULT_BG_COLOR);
 		ofRect(0, 0, width, height);
 	}
 	for(int i = 0; i < controls.size(); i++) {
@@ -229,7 +241,7 @@ void GuiContainer::touchOver(int _x, int _y, int touchId) {
 	if(!enabled) return;
 	for(int i = controls.size()-1; i >= 0; i--) {
 		if(controls[i]->isContainer()) { // if we're a container, call touchOver to propagate to children.
-			controls[i]->touchOver(_x, _y, touchId);
+			controls[i]->touchOver(_x-x, _y-y, touchId);
 		} else {
 			controls[i]->_touchOver(_x-x, _y-y, touchId);
 		}
@@ -243,7 +255,7 @@ bool GuiContainer::touchMoved(int _x, int _y, int button) {
 		bool foundFocus = false;
 		for(int i = controls.size()-1; i >= 0; i--) {
 			if(controls[i]->isContainer()) { // if we're a container, call touchMoved to propagate to children.
-				foundFocus = controls[i]->touchMoved(_x, _y, button);
+				foundFocus = controls[i]->touchMoved(_x-x, _y-y, button);
 			} else {
 				foundFocus = controls[i]->_touchMoved(_x-x, _y-y, button);
 			}
@@ -277,7 +289,7 @@ bool GuiContainer::touchDown(int _x, int _y, int button) {
 		
 		
 		if(controls[i]->isContainer()) { // if we're a container, call touchDown to propagate to children.
-			foundFocus = controls[i]->touchDown(_x, _y, button);
+			foundFocus = controls[i]->touchDown(_x-x, _y-y, button);
 			
 		} else {
 			foundFocus = controls[i]->_touchDown(_x-x, _y-y, button);
@@ -310,11 +322,16 @@ bool GuiContainer::touchUp(int _x, int _y, int button) {
 	
 	for(int i = controls.size()-1; i >= 0; i--) {
 		if(controls[i]->isContainer()) { // if we're a container, call touchUp to propagate to children.
-			foundFocus = controls[i]->touchUp(_x, _y, button);
+			foundFocus = controls[i]->touchUp(_x-x, _y-y, button);
 		} else {
 			foundFocus = controls[i]->_touchUp(_x-x, _y-y, button);
 		} 
-		if(foundFocus) return true;
+		if(foundFocus) {
+			if(autoSaving) {
+				saveValues(autoSaveFile);
+			}
+			return true;
+		}
 	}
 	return false;
 }
@@ -567,4 +584,7 @@ void GuiContainer::add(GuiControl *c) {
 		c->numListeners = numListeners;
 	}
 	controls.push_back(c);
+}
+int GuiContainer::numChildren() {
+	return controls.size();
 }

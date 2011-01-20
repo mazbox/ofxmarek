@@ -69,7 +69,15 @@ public:
 		return NULL;
 	}
 	
-	
+	bool deletePoint(ofxTimelinePoint<T> *p) {
+		for(int i = 0; i < points.size(); i++) {
+			if(p==&points[i]) {
+				points.erase(points.begin()+i);
+				return true;
+			}
+		}
+		return false;
+	}
 	// how many points there are
 	int size() {
 		return points.size();
@@ -131,7 +139,10 @@ public:
 		return maxValue;
 	}	
 	
-	
+	void setMinMax(float minVal, float maxVal) {
+		minValue = minVal;
+		maxValue = minVal;
+	}
 	
 protected:
 	void findMinMax() {

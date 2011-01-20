@@ -3,6 +3,7 @@
 
 
 #include "ofTrueTypeFont.h"
+#include "ofMain.h"
 
 
 class ofxTrueTypeFont{

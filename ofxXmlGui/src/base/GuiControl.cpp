@@ -40,7 +40,8 @@ GuiControl::GuiControl() {
 	editState = EDIT_NONE;
 	type = "control";
 	scalable = true;
-	x = y = width = height = 100;
+	x = y = 0;
+	width = height = 100;
 	parent = NULL;
 }
 
@@ -263,4 +264,7 @@ void GuiControl::makeHidden() {
 	width = height = 0;
 	x = y = 200;
 	hide();
+}
+void GuiControl::setResources(GuiResources *res) {
+	resources = res;
 }
