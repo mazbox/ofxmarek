@@ -336,7 +336,10 @@ GuiContainer *ofxXmlGui::createPage(string name) {
 void ofxXmlGui::setPage(string name) {
 	for(int i = 0; i < pages.size(); i++) {
 		if(pages[i]->name==name) {
+			currPage->hide();
 			currPage = pages[i];
+			ival(pageChooser->value) = i;
+			currPage->show();
 			return;
 		}
 	}
@@ -345,7 +348,10 @@ void ofxXmlGui::setPage(int pageNumber) {
 	
 	// check bounds - ignore if out of bounds.
 	if(pageNumber>=0 && pageNumber<pages.size()) {
+		currPage->hide();
 		currPage = pages[pageNumber];
+		ival(pageChooser->value) = pageNumber;
+		currPage->show();
 	} else {
 		printf("ofxXmlGui: Warning setPage(int) parameter out of bounds\n");
 	}
@@ -367,7 +373,9 @@ void ofxXmlGui::nextPage() {
 	if(currentIndex!=-1) {
 		currentIndex++;
 		currentIndex %= pages.size();
+		currPage->hide();
 		currPage = pages[currentIndex];
+		currPage->show();
 		ival(pageChooser->value) = currentIndex;
 	}
 }
@@ -377,7 +385,9 @@ void ofxXmlGui::prevPage() {
 	if(currentIndex!=-1) {
 		currentIndex--;
 		if(currentIndex<0) currentIndex += pages.size();
+		currPage->hide();
 		currPage = pages[currentIndex];
+		currPage->show();
 		ival(pageChooser->value) = currentIndex;
 	}
 }

@@ -85,7 +85,7 @@ public:
 		for(int i = 1; i < steps; i++) {
 			ofLine(x + cellWidth*i, y, x + cellWidth*i, y +height);
 		}
-		ofLine(x+width*position, y, x+width*position, y*height);
+		//ofLine(x+width*position, y, x+width*position, y*height);
 		ofFill();
 		 
 	}

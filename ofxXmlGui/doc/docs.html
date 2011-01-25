@@ -1,0 +1,167 @@
+
+<html>
+<head>
+<title>ofxXmlGui Documentation</title>
+<style type="text/css">
+	body, td, p {
+		font-family:Helvetica, Arial, Sans-serif;
+		font-size:12px;
+		line-height:180%;
+	}
+	
+	pre {
+		background-color:#CCDDEE;
+	}
+</style>
+</head>
+<body>
+
+<h1>ofxXmlGui Documentation</h1>
+
+<h2>Currently Supported Controls</h2>
+<ol>
+<li>Button</li>
+<li>Slider</li>
+<li>Toggle Button</li>
+<li>Rotatry Knob</li>
+
+<li>Text Field</li>
+<li>Int Field</li>
+<li>Float Field</li>
+<li>Double Field</li>
+<li>FPS Counter</li>
+<li>2D Slider</li>
+<li>Segmented Control</li>
+<li>Color Picker</li>
+<li>Musical Keyboard</li>
+<li>File</li>
+<li>Contour</li>
+<li>Meter</li>
+<li>VU</li>
+<li>List</li>
+<li>Grid</li>
+<li>Panner</li>
+</ol>
+<h2>Concepts</h2>
+
+
+
+<h3>Touches</h3>
+<p>
+	All cursor events are called touches - i.e. instead of 
+	mouseMoved(), mouseDragged() etc, we have touchUp(), touchDown() etc.
+	This is so you can use an app you made on a mobile device, multitouch surface
+	or computer without changing any code. On a computer, you'd emulate a single finger
+	or 2 fingers if you counted right mouse button as a different touchID
+</p>
+
+	<table border="1">
+	<tr>
+		<th>Traditional (mouse) name</th>
+		<th>ofxXmlGui name</th>
+	</tr>
+	<tr>
+		<td>mousePressed()</td>
+		<td>touchDown()</td>
+	</tr>
+	
+	<tr>
+		<td>mouseReleased()</td>
+		<td>touchUp()</td>
+	</tr>
+	<tr>
+		<td>mouseDragged()</td>
+		<td>touchMoved()</td>
+	</tr>
+	
+	<tr>
+		<td>mouseMoved()</td>
+		<td>touchOver()*</td>
+	</tr>
+	</table>
+	
+	<p><i>* Note that touchOver() represents a finger hovering over but not actually touching
+	the device - totally undetectable, but is simply there to support mouseMoved().</i></p>
+<h3>Control ID's</h3>
+
+<p>
+	In ofxXmlGui, every element has a string attribute called a control ID. This
+	is supposed to be unique, and allows you to identify an element in a GUI
+</p>
+
+<h3>Resources</h3>
+<p>
+	The gui requires a default truetype font to run.
+	There is a class called GuiResources, which all resources are accessed through. This
+	ensures nothing is loaded more than once.
+</p>
+<h3>Event Listening</h3>
+
+<p>
+	There's 2 ways of working out what value a particular control is set to.
+	<ol>
+	<li>You can  point an control to a variable, like ofxSimpleGuiToo:<br />
+	e.g.:<br />
+	<pre>
+	float volume = 0;
+	...
+	gui.addSlider("Volume", volume, 0, 1);
+	</pre>
+	</li>
+	<li>Or, you can add an event listener. For this, you need to inherit
+	the GuiListener class, and implement the controlChanged() method.
+	The controlChanged() method gets fired every time a control is touched
+	or dragged.
+	<br />e.g.:<br />
+	<pre>
+		class Myclass: public GuiListener {
+		...
+			void setup() {
+				doSomeSetupStuff();
+				gui.addListener(this);
+			}
+			
+			void controlChanged(GuiControl *ctrl) {
+				if(ctrl->controlId=="ShowWindow") {
+					showTheWindow();
+				}
+			}
+		};
+	</pre>
+	</li>
+	
+	</ol>
+	
+</p>
+
+<h2>Internals</h2>
+<p>
+ofxXmlGui is divided into containers and controls. Containers hold the controls and propagate the 
+events. Controls are the actual widgets themselves. The base classes for these are GuiContainer 
+and GuiControl. GuiContainer actually inherits from GuiControl.
+</p>
+
+<p>
+Each control has a few important attributes
+<pre>
+string type;
+string controlId;
+void *value;
+</pre>
+<p>
+<b>type</b> is a string name of the type of control it is. This is used when working out which type
+of control to instantiate when reading the GUI from xml.
+</p>
+<p><b>controlId</b> is a unique identifier for each control instance - good to give it a semantic name.
+</p>
+<p><b>value</b> is a void pointer to the value data of the control. Sometimes it's an int, sometimes
+it's a float or a string. The control itself handles how this void pointer should be treated.
+</p>
+<p>
+Every control is capable of saving itself to xml and loading itself from xml.
+
+</p>
+
+</body>
+
+</html>

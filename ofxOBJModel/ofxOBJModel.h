@@ -5,9 +5,6 @@
  *  It's no good for anything complicated, just good for 
  *  loading and saving simple 3d meshes for projection mapping.
  *
- *  It doesn't load any materials or normals, just vertex coords,
- *  what mesh and face they're attached to, and the mesh name.
- *
  *  You can create files this format reads and writes in
  *  Cinema4D, you can name the objects in cinema 4d so you
  *  can reference them here. Each object shows up as an "ObjMesh"
@@ -31,6 +28,9 @@
 class ObjFace {
 public:
 	vector<ofPoint> points;
+	vector<ofPoint> normals;
+	vector<ofPoint> texCoords;
+	
 	void draw(bool drawSolid = true);
 	
 	/**
@@ -141,6 +141,8 @@ public:
 	void draw(bool drawSolid = true);
 	
 	
+
+	
 	
 private:
 	/**
@@ -148,6 +150,8 @@ private:
 	 * turns it into an ofPoint.
 	 */
 	ofPoint parseVertex(string line);
+	
+	ofPoint parseCoords(string line);
 	string filePath;
 };
 

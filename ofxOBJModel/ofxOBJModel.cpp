@@ -44,12 +44,16 @@ bool ofxOBJModel::load(string path) {
 	meshes.clear();
 	
 	ObjMesh *currMesh = NULL;
+	
 	// this is a list of all points
 	// that we can drop after parsing
 	vector<ofPoint> points; 
+	vector<ofPoint> normals;
+	vector<ofPoint> texCoords;
 	
 	// obj file format vertexes are 1-indexed
 	points.push_back(ofPoint());
+	normals.push_back(ofPoint());
 	
 	ifstream myfile (path.c_str());
 	if (myfile.is_open()) {
@@ -62,6 +66,8 @@ bool ofxOBJModel::load(string path) {
 			// the only things we're interested in is
 			// lines beginning with 'g' - this says start of new object
 			// lines beginning with 'v ' - coordinate of a vertex
+			// lines beginning with 'vn ' - vertex normals                   -- todo
+			// lines beginning with 'vt ' - texcoords (either 2 or 3 values) -- todo
 			// lines beginning with 'f ' - specifies a face of a shape
 			// 			we take each number before the slash as the index
 			// 			of the vertex to join up to create a face.
@@ -70,21 +76,34 @@ bool ofxOBJModel::load(string path) {
 				currMesh = new ObjMesh(line.substr(2));
 				meshes.push_back(currMesh);
 			} else if(line.find("v ")==0) { // new vertex
-				points.push_back(parseVertex(line));
+				points.push_back(parseCoords(line));
+			} else if(line.find("vn ")==0) {
+				normals.push_back(parseCoords(line));
+			} else if(line.find("vt ")==0) {
+				texCoords.push_back(parseCoords(line));
 			} else if(line.find("f ")==0) { // face definition
+				
 				if(currMesh!=NULL) {
 					line = line.substr(2); // lop off "f "
 					vector<string> indices = split(line, ' ');
 					// remove any texcoords (/xxx's)
-					for(int i = 0; i < indices.size(); i++) {
-						int slashPos = indices[i].find("/");
-						if(slashPos!=-1) {
-							indices[i] = indices[i].substr(0, slashPos);
-						}
-					}
+					
 					ObjFace *face = new ObjFace();
 					for(int i = 0; i < indices.size(); i++) {
-						face->points.push_back(points[atoi(indices[i].c_str())]);
+						vector<string> parts = ofSplitString(indices[i], "/");
+						
+						// first index is always a point
+						face->points.push_back(points[atoi(parts[0].c_str())]);
+
+						if(parts.size()==2) {
+							face->texCoords.push_back(texCoords[atoi(parts[1].c_str())]);
+						} else if(parts.size()==3) {
+							face->normals.push_back(normals[atoi(parts[2].c_str())]);
+							if(parts[1]!="") {
+								face->texCoords.push_back(texCoords[atoi(parts[1].c_str())]);
+							}
+						}
+
 					}
 					currMesh->addFace(face);
 				}
@@ -94,7 +113,7 @@ bool ofxOBJModel::load(string path) {
 		
 		myfile.close();
 		
-		printf("Successfully loaded %s\n-----\nVertices: %d\nMeshes: %d\n", path.c_str(), points.size(), meshes.size());
+		printf("Successfully loaded %s\n-----\nVertices: %d\nMeshes: %d\nNormals: %d\nTexCoords: %d\n", path.c_str(), points.size(), meshes.size(), normals.size(), texCoords.size());
 		
 		return true;
 	} else {
@@ -148,6 +167,24 @@ bool ofxOBJModel::save(string file) {
 	
 	
 }
+
+
+ofPoint ofxOBJModel::parseCoords(string line) {
+	ofPoint p;
+	line = line.substr(line.find(" ")+1);
+	vector<string> elements = split(line, ' ');
+	if(elements.size()<2) {
+		printf("Error line does not have at least 2 coordinates: \"%s\"\n", line.c_str());
+		return p;
+	}
+	p.x = atof(elements[0].c_str());
+	p.y = atof(elements[1].c_str());
+	if(elements.size()>=3) {
+		p.z = atof(elements[2].c_str());
+	}
+	
+	return p;
+}
 	
 /**
  * Takes a line from the obj file beginning with a "v " and 
@@ -181,6 +218,8 @@ void ofxOBJModel::draw(bool drawSolid) {
 		meshes[i]->draw(drawSolid);
 	}
 }
+
+
 
 vector<string> ofxOBJModel::getMeshNames() {
 	vector<string> meshNames;
@@ -407,12 +446,37 @@ ofRectangle ObjFace::get2DRect() {
 
 void ObjFace::draw(bool drawSolid) {
 	
-	if(drawSolid) glBegin(GL_POLYGON);
-	else glBegin(GL_LINE_LOOP);
-	for(int i = 0; i < points.size(); i++) {
-		glVertex3f(points[i].x, points[i].y, points[i].z);
+	if(drawSolid) {
+		if(points.size()==3) {
+			glBegin(GL_TRIANGLES);
+		} else if(points.size()==4) {
+			glBegin(GL_QUADS);
+		} else {
+			glBegin(GL_POLYGON);
+		}
+		
+		bool hasNormals = points.size()==normals.size();
+		bool hasTexCoords = points.size()==texCoords.size();
+		
+		for(int i = 0; i < points.size(); i++) {
+			if(hasNormals) glNormal3f(normals[i].x, normals[i].y, normals[i].z);
+			if(hasTexCoords) glTexCoord2f(texCoords[i].x, texCoords[i].y);
+			glVertex3f(points[i].x, points[i].y, points[i].z);
+		}
+		glEnd();
+		for(int i = 0; i < points.size(); i++) {
+			glPushMatrix();
+			glTranslatef(points[i].x, points[i].y, points[i].z);
+			ofDrawBitmapString(ofToString(texCoords[i].x)+","+ofToString(texCoords[i].y), 0, 0);
+			glPopMatrix();
+		}
+	} else {
+		glBegin(GL_LINE_LOOP);
+		for(int i = 0; i < points.size(); i++) {
+			glVertex3f(points[i].x, points[i].y, points[i].z);
+		}
+		glEnd();
 	}
-	glEnd();
 }
 
 

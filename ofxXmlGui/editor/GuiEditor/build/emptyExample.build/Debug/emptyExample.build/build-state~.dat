@@ -1,0 +1,2035 @@
+TemptyExample
+v7
+r0
+t317672248.800505
+cCheck dependencies
+cProcessInfoPlistFile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/Info.plist openFrameworks-Info.plist
+cProcessPCH++ /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiContainer.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiContainer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiControl.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiResources.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiResources.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiTypes.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlGui.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/ofxXmlGui.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ColorUtils.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/StringUtils.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxml.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlerror.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlparser.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlSettings.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug normal i386
+cPhaseScriptExecution "Run Script" /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+cPBXCp bin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework ../../../libs/glut/lib/osx/GLUT.framework
+cTouch /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app
+
+N/Developer/usr/include/gcc/darwin/4.2/stdint.h
+c000000004C239434000000000000190C
+t1277400116
+s6412
+
+N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004C238F150000000000000C7E
+t1277398805
+s3198
+i"syslimits.h"
+
+N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004C238F150000000000003197
+t1277398805
+s12695
+i<machine/ansi.h>
+i<sys/_types.h>
+
+N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h
+c000000004C238D9C0000000000000155
+t1277398428
+s341
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004CE74D380000000000043820
+t1290227000
+s276512
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000004C623FBF0000000002B48610
+t1281507263
+s45385232
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000004A12050E0000000000022140
+t1242694926
+s139584
+
+N/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h
+c000000004A12050C0000000000000475
+t1242694924
+s1141
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004C91794F00000000004D2720
+t1284602191
+s5056288
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004D22B148000000000000A5F0
+t1294119240
+s42480
+
+N/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004C23BF2D00000000000005FF
+t1277411117
+s1535
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004CDB52F900000000002181A0
+t1289442041
+s2195872
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000004C971DAF0000000000781330
+t1284971951
+s7869232
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004C23F49F0000000000021710
+t1277424799
+s136976
+
+N/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h
+c000000004A11F0980000000000000400
+t1242689688
+s1024
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004C8AD97D000000000017B260
+t1284168061
+s1552992
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004BD2501F0000000000025B59
+t1272074271
+s154457
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004BD2501F0000000000003F84
+t1272074271
+s16260
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004CE74B410000000000043330
+t1290226497
+s275248
+
+N/System/Library/Frameworks/QuickTime.framework/Headers/QuickTime.h
+c000000004C23C4D00000000000000659
+t1277412560
+s1625
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004CC8C1970000000000783950
+t1288225175
+s7878992
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/base/GuiContainer.h
+c000000004D36EB5F0000000000000E5F
+t1295444831
+s3679
+i"GuiControl.h"
+i"ofxXmlSettings.h"
+i"GuiResources.h"
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/base/GuiControl.h
+c000000004D3354A3000000000000112B
+t1295209635
+s4395
+i"ofMain.h"
+i"ofxXmlSettings.h"
+i"GuiListener.h"
+i"GuiResources.h"
+i"ColorUtils.h"
+i"StringUtils.h"
+i"ParameterInfo.h"
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/base/GuiListener.h
+c000000004BAFDC4F0000000000000114
+t1269816399
+s276
+i"GuiControl.h"
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/base/GuiResources.h
+c000000004BC77BCF00000000000002ED
+t1271364559
+s749
+i<map>
+i"ofImage.h"
+i"ofTrueTypeFont.h"
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/base/ParameterInfo.h
+c000000004B75C291000000000000017A
+t1266008721
+s378
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/controls/basic/GuiButton.h
+c000000004CF77D2F0000000000000631
+t1291287855
+s1585
+i"GuiControl.h"
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/controls/basic/GuiSlider.h
+c000000004D0A599E0000000000000FEF
+t1292523934
+s4079
+i"GuiControl.h"
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/ofxXmlGui.h
+c000000004D36EB520000000000000EE9
+t1295444818
+s3817
+i"GuiContainer.h"
+i"GuiSlider.h"
+i"GuiToggle.h"
+i"GuiSegmentedControl.h"
+i"GuiList.h"
+i"GuiButton.h"
+i"GuiFloatField.h"
+i"GuiDoubleField.h"
+i"GuiPanner.h"
+i"GuiTitle.h"
+i"GuiSlider2D.h"
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/util/ColorUtils.h
+c000000004BE17E2B0000000000000189
+t1273069099
+s393
+
+N/Work/openFrameworks/addons/ofxXmlGui/src/util/StringUtils.h
+c000000004BE1960D0000000000000100
+t1273075213
+s256
+i<vector>
+i<string>
+
+N/Work/openFrameworks/addons/ofxXmlSettings/libs/tinyxml.h
+c000000004C3AEF12000000000000FD05
+t1278930706
+s64773
+i<ctype.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<assert.h>
+i<string>
+i<iostream>
+i<sstream>
+i"tinystr.h"
+
+N/Work/openFrameworks/addons/ofxXmlSettings/src/ofxXmlSettings.h
+c000000004CE657D10000000000001B46
+t1290164177
+s6982
+i"ofMain.h"
+i<string.h>
+i"tinyxml.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiContainer.cpp
+c000000004D36EB660000000000003462
+t1295444838
+s13410
+i"GuiContainer.h"
+i<sys/stat.h>
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiControl.cpp
+c000000004D35C306000000000000180D
+t1295368966
+s6157
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiResources.cpp
+c000000004D11EB170000000000000811
+t1293019927
+s2065
+i"GuiResources.h"
+i<sys/stat.h>
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp
+c000000004D35BD2800000000000008A8
+t1295367464
+s2216
+i"GuiControl.h"
+i"GuiTitle.h"
+i"GuiButton.h"
+i"GuiSlider.h"
+i"GuiToggle.h"
+i"GuiTextField.h"
+i"GuiFPSCounter.h"
+i"GuiIntField.h"
+i"GuiFloatField.h"
+i"GuiDoubleField.h"
+i"GuiSlider2D.h"
+i"GuiImage.h"
+i"GuiImageButton.h"
+i"GuiImageToggle.h"
+i"GuiNiceButton.h"
+i"GuiSegmentedControl.h"
+i"GuiText.h"
+i"GuiColorPicker.h"
+i"GuiKeyboard.h"
+i"GuiKnob.h"
+i"GuiContour.h"
+i"GuiMeter.h"
+i"GuiVU.h"
+i"GuiList.h"
+i"GuiGrid.h"
+i"GuiPanner.h"
+i"GuiContainer.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiButton.h
+c000000004CF77D2F0000000000000631
+t1291287855
+s1585
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiColorPicker.h
+c000000004CF77C5F0000000000000803
+t1291287647
+s2051
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiContour.h
+c000000004D25E9990000000000001862
+t1294330265
+s6242
+i"GuiControl.h"
+i"StringUtils.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiDoubleField.h
+c000000004CFD25A200000000000005EE
+t1291658658
+s1518
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiFPSCounter.h
+c000000004BC77BE400000000000001AF
+t1271364580
+s431
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiFloatField.h
+c000000004BC77ADF00000000000005E0
+t1271364319
+s1504
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiGrid.h
+c000000004CF77C8C0000000000000C76
+t1291287692
+s3190
+i"GuiControl.h"
+i"GridSequence.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiIntField.h
+c000000004BC77BE400000000000005A3
+t1271364580
+s1443
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiKeyboard.h
+c000000004CF77CF10000000000000B90
+t1291287793
+s2960
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiKnob.h
+c000000004CF77D2F00000000000012FE
+t1291287855
+s4862
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiList.h
+c000000004D1202F10000000000000FDC
+t1293026033
+s4060
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiMeter.h
+c000000004CF77D2F0000000000000BF5
+t1291287855
+s3061
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiPanner.h
+c000000004D0A598700000000000004F8
+t1292523911
+s1272
+i"GuiSlider.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiSegmentedControl.h
+c000000004CFD1545000000000000074A
+t1291654469
+s1866
+i"GuiControl.h"
+i"GuiButton.h"
+i"StringUtils.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiSlider.h
+c000000004D0A599E0000000000000FEF
+t1292523934
+s4079
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiSlider2D.h
+c000000004D25F7290000000000000835
+t1294333737
+s2101
+i"StringUtils.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiText.h
+c000000004BC77BE400000000000002AD
+t1271364580
+s685
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiTextField.h
+c000000004BC77BE4000000000000057A
+t1271364580
+s1402
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiTitle.h
+c000000004D35BD99000000000000018F
+t1295367577
+s399
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiToggle.h
+c000000004CF77D130000000000000AE8
+t1291287827
+s2792
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiVU.h
+c000000004CF77D4A0000000000000AC7
+t1291287882
+s2759
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/image/GuiImage.h
+c000000004BC76E510000000000000359
+t1271361105
+s857
+i"GuiResources.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/image/GuiImageButton.h
+c000000004BC76E6E0000000000000619
+t1271361134
+s1561
+i"GuiControl.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/image/GuiImageToggle.h
+c000000004BC76E7A0000000000000508
+t1271361146
+s1288
+i"GuiToggle.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/nice/GuiNiceButton.h
+c000000004CF77D3C00000000000003C9
+t1291287868
+s969
+i"GuiImageButton.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/ofxXmlGui.cpp
+c000000004D3832F50000000000002588
+t1295528693
+s9608
+i"ofxXmlGui.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.cpp
+c000000004BE17E9C0000000000000212
+t1273069212
+s530
+i"ColorUtils.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.h
+c000000004BE17E2B0000000000000189
+t1273069099
+s393
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h
+c000000004BE1976F0000000000000A81
+t1273075567
+s2689
+i<list>
+i"StringUtils.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.cpp
+c000000004BE178F300000000000001DD
+t1273067763
+s477
+i"StringUtils.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.h
+c000000004BE1960D0000000000000100
+t1273075213
+s256
+i<vector>
+i<string>
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.cpp
+c000000004C3AEF120000000000009064
+t1278930706
+s36964
+i<ctype.h>
+i<sstream>
+i<iostream>
+i"tinyxml.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.h
+c000000004C3AEF12000000000000FD05
+t1278930706
+s64773
+i<ctype.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<assert.h>
+i<string>
+i<iostream>
+i<sstream>
+i"tinystr.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp
+c000000004C3AEF120000000000000712
+t1278930706
+s1810
+i"tinyxml.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp
+c000000004C3AEF120000000000009B7B
+t1278930706
+s39803
+i<ctype.h>
+i<stddef.h>
+i"tinyxml.h"
+i<windows.h>
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp
+c000000004D3302AD0000000000004D46
+t1295188653
+s19782
+i"ofxXmlSettings.h"
+i<vector>
+i<string>
+i<iostream>
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h
+c000000004CE657D10000000000001B46
+t1290164177
+s6982
+i"ofMain.h"
+i<string.h>
+i"tinyxml.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx/GLUT.framework
+c000000004D34279400000000000000EE
+t1295263636
+s238
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx/GLUT.framework/GLUT
+c000000004D3302B70000000000092A98
+t1295188663
+s600728
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app
+t1295979448
+s102
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/Info.plist
+t1295979433
+s621
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug
+t1295979448
+s866556
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/PkgInfo
+t1295979433
+s8
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework
+t1295979448
+s204
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ColorUtils.o
+t1295979443
+s4388
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiContainer.o
+t1295979440
+s746160
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o
+t1295979440
+s656792
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiResources.o
+t1295979441
+s327296
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiTypes.o
+t1295979442
+s1036788
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/StringUtils.o
+t1295979443
+s71720
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/emptyExampleDebug.LinkFileList
+c000000004D3F13A9000000000000068C
+t1295979433
+s1676
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o
+t1295979438
+s426640
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlGui.o
+t1295979443
+s919368
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlSettings.o
+t1295979445
+s606104
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o
+t1295979438
+s418748
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxml.o
+t1295979444
+s252736
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlerror.o
+t1295979443
+s72372
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlparser.o
+t1295979444
+s164044
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004D3F13A90000000000000113
+t1295979433
+s275
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/main.cpp
+c000000004D3EBF56000000000000019E
+t1295957846
+s414
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.cpp
+c000000004D3EBF56000000000000044C
+t1295957846
+s1100
+i"testApp.h"
+
+N/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.h
+c000000004D3EBF5600000000000001B3
+t1295957846
+s435
+i"ofMain.h"
+
+N/Work/openFrameworks/libs/fmodex/include/fmod.h
+c000000004D3302B60000000000028E68
+t1295188662
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Work/openFrameworks/libs/fmodex/include/fmod_codec.h
+c000000004CE659B1000000000000334A
+t1290164657
+s13130
+
+N/Work/openFrameworks/libs/fmodex/include/fmod_dsp.h
+c000000004CE659B1000000000000892F
+t1290164657
+s35119
+
+N/Work/openFrameworks/libs/fmodex/include/fmod_errors.h
+c000000004CE659B10000000000003408
+t1290164657
+s13320
+i"fmod.h"
+
+N/Work/openFrameworks/libs/fmodex/include/fmod_memoryinfo.h
+c000000004CE659B10000000000003C95
+t1290164657
+s15509
+
+N/Work/openFrameworks/libs/glew/include/GL/glew.h
+c000000004D3302B700000000000C1916
+t1295188663
+s792854
+i<stddef.h>
+i<inttypes.h>
+i<stdint.h>
+i<inttypes.h>
+i<OpenGL/glu.h>
+i<GL/glu.h>
+
+N/Work/openFrameworks/libs/openFrameworks/3d/of3dUtils.h
+c000000004D3EBF1100000000000000D7
+t1295957777
+s215
+
+N/Work/openFrameworks/libs/openFrameworks/3d/ofCamera.h
+c000000004D3EBF110000000000000452
+t1295957777
+s1106
+i"ofRectangle.h"
+i"ofAppRunner.h"
+i"ofNode.h"
+i"ofNodeWithTarget.h"
+
+N/Work/openFrameworks/libs/openFrameworks/3d/ofEasyCam.h
+c000000004D3EBD380000000000000340
+t1295957304
+s832
+i"ofCamera.h"
+
+N/Work/openFrameworks/libs/openFrameworks/3d/ofLight.h
+c000000004D3EBF110000000000000524
+t1295957777
+s1316
+i"ofNode.h"
+i"ofColor.h"
+
+N/Work/openFrameworks/libs/openFrameworks/3d/ofMeshNode.h
+c000000004D3EBD380000000000000117
+t1295957304
+s279
+i"ofNode.h"
+
+N/Work/openFrameworks/libs/openFrameworks/3d/ofNode.h
+c000000004D3EBF11000000000000144F
+t1295957777
+s5199
+i"ofVectorMath.h"
+i"of3dUtils.h"
+i"ofGraphics.h"
+
+N/Work/openFrameworks/libs/openFrameworks/3d/ofNodeWithTarget.h
+c000000004D3EBF11000000000000024A
+t1295957777
+s586
+
+N/Work/openFrameworks/libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004D3302B7000000000000041D
+t1295188663
+s1053
+i"ofPoint.h"
+
+N/Work/openFrameworks/libs/openFrameworks/app/ofAppGlutWindow.h
+c000000004D3302B7000000000000060E
+t1295188663
+s1550
+i"ofConstants.h"
+i"ofAppBaseWindow.h"
+i"ofEvents.h"
+
+N/Work/openFrameworks/libs/openFrameworks/app/ofAppRunner.h
+c000000004D3302B7000000000000054D
+t1295188663
+s1357
+i"ofConstants.h"
+i"ofPoint.h"
+i"ofRectangle.h"
+
+N/Work/openFrameworks/libs/openFrameworks/app/ofBaseApp.h
+c000000004D3302B70000000000000416
+t1295188663
+s1046
+i"ofPoint.h"
+i"ofEvents.h"
+
+N/Work/openFrameworks/libs/openFrameworks/communication/ofArduino.h
+c000000004D3302B70000000000003D17
+t1295188663
+s15639
+i<list>
+i<vector>
+i<string>
+i<iostream>
+i"ofEvents.h"
+i"ofSerial.h"
+
+N/Work/openFrameworks/libs/openFrameworks/communication/ofSerial.h
+c000000004D3302B70000000000000D63
+t1295188663
+s3427
+i"ofConstants.h"
+i"ofTypes.h"
+i<termios.h>
+i<winbase.h>
+i<tchar.h>
+i<iostream>
+i<string.h>
+i<setupapi.h>
+i<regstr.h>
+i<winioctl.h>
+i<initguid.h>
+
+N/Work/openFrameworks/libs/openFrameworks/events/ofEventUtils.h
+c000000004CE659B20000000000000AFA
+t1290164658
+s2810
+i"ofConstants.h"
+i"Poco/FIFOEvent.h"
+i"Poco/Delegate.h"
+
+N/Work/openFrameworks/libs/openFrameworks/events/ofEvents.h
+c000000004D3302B700000000000018FB
+t1295188663
+s6395
+i"ofConstants.h"
+i"ofEventUtils.h"
+i"ofxEventUtils.h"
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofFbo.h
+c000000004D3302B70000000000000B79
+t1295188663
+s2937
+i"ofTexture.h"
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofGraphics.h
+c000000004D3EBD3800000000000018E6
+t1295957304
+s6374
+i"ofConstants.h"
+i"ofColor.h"
+i"ofPoint.h"
+i"ofRectangle.h"
+i"ofTypes.h"
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofImage.h
+c000000004D3302B70000000000001055
+t1295188663
+s4181
+i"ofFileUtils.h"
+i"ofTexture.h"
+i"ofPixels.h"
+i"ofBaseTypes.h"
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofPixelUtils.h
+c000000004D3302B70000000000000210
+t1295188663
+s528
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofPixels.h
+c000000004D3302B700000000000004DE
+t1295188663
+s1246
+i"ofConstants.h"
+i"ofUtils.h"
+i"ofColor.h"
+i"ofPixelUtils.h"
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofShader.h
+c000000004D3302B70000000000000F8D
+t1295188663
+s3981
+i"ofConstants.h"
+i"ofBaseTypes.h"
+i"ofTexture.h"
+i<map>
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofTexture.h
+c000000004D3302B7000000000000110F
+t1295188663
+s4367
+i"ofPoint.h"
+i"ofRectangle.h"
+i"ofBaseTypes.h"
+i"Poco/SharedPtr.h"
+
+N/Work/openFrameworks/libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004D3302B7000000000000084D
+t1295188663
+s2125
+i<vector>
+i"ofPoint.h"
+i"ofRectangle.h"
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofMath.h
+c000000004D3302B70000000000000A73
+t1295188663
+s2675
+i"ofPoint.h"
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofMatrix3x3.h
+c000000004D3302B70000000000000A4C
+t1295188663
+s2636
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.h
+c000000004D3302B70000000000006B15
+t1295188663
+s27413
+i"ofVec3f.h"
+i"ofVec4f.h"
+i"ofQuaternion.h"
+i"ofConstants.h"
+i<cmath>
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofQuaternion.h
+c000000004D3302B700000000000025A3
+t1295188663
+s9635
+i"ofConstants.h"
+i"ofVec3f.h"
+i"ofVec4f.h"
+i<cmath>
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofVec2f.h
+c000000004D3302B700000000000040D6
+t1295188663
+s16598
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofVec3f.h
+c000000004D3302B7000000000000621A
+t1295188663
+s25114
+i"ofVec2f.h"
+i"ofVec4f.h"
+i"ofConstants.h"
+i<cmath>
+i<iostream>
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofVec4f.h
+c000000004D3302B70000000000002E9F
+t1295188663
+s11935
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/math/ofVectorMath.h
+c000000004D3302B70000000000000099
+t1295188663
+s153
+i"ofVec2f.h"
+i"ofVec3f.h"
+i"ofVec4f.h"
+i"ofMatrix3x3.h"
+i"ofMatrix4x4.h"
+i"ofQuaternion.h"
+
+N/Work/openFrameworks/libs/openFrameworks/ofMain.h
+c000000004D3302B70000000000000572
+t1295188663
+s1394
+i"ofConstants.h"
+i"ofFileUtils.h"
+i"ofSystemUtils.h"
+i"ofThread.h"
+i"ofURLFileLoader.h"
+i"ofUtils.h"
+i"ofBaseTypes.h"
+i"ofTypes.h"
+i"ofColor.h"
+i"ofPoint.h"
+i"ofRectangle.h"
+i"ofMath.h"
+i"ofVectorMath.h"
+i"ofSerial.h"
+i"ofArduino.h"
+i"ofTexture.h"
+i"ofTrueTypeFont.h"
+i"ofGraphics.h"
+i"ofImage.h"
+i"ofFbo.h"
+i"ofShader.h"
+i"ofPixels.h"
+i"ofBaseApp.h"
+i"ofAppRunner.h"
+i"ofSoundStream.h"
+i"ofSoundPlayer.h"
+i"ofSoundUnit.h"
+i"ofSoundEffect.h"
+i"ofVideoGrabber.h"
+i"ofVideoPlayer.h"
+i"ofEvents.h"
+i"of3dUtils.h"
+i"ofNode.h"
+i"ofCamera.h"
+i"ofMeshNode.h"
+i"ofEasyCam.h"
+i"ofLight.h"
+
+N/Work/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h
+c000000004D3302B70000000000000366
+t1295188663
+s870
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.h
+c000000004D3302B700000000000006D9
+t1295188663
+s1753
+i"ofConstants.h"
+i"ofBaseSoundPlayer.h"
+i"fmod.h"
+i"fmod_errors.h"
+
+N/Work/openFrameworks/libs/openFrameworks/sound/ofSoundEffect.h
+c000000004D3EBD38000000000000095A
+t1295957304
+s2394
+i"ofSoundUnit.h"
+i<vector>
+i<deque>
+i"ofMain.h"
+
+N/Work/openFrameworks/libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004D3302B700000000000007DA
+t1295188663
+s2010
+i"ofConstants.h"
+i"fmod.h"
+i"fmod_errors.h"
+i"ofBaseTypes.h"
+i"ofBaseSoundPlayer.h"
+i"ofQuicktimeSoundPlayer.h"
+i"ofFmodSoundPlayer.h"
+i"ofxOpenALSoundPlayer.h"
+
+N/Work/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h
+c000000004D3302B700000000000004C4
+t1295188663
+s1220
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/sound/ofSoundUnit.h
+c000000004D3EBD38000000000000253D
+t1295957304
+s9533
+i"ofSoundStream.h"
+i"ofTypes.h"
+i"ofUtils.h"
+i<vector>
+
+N/Work/openFrameworks/libs/openFrameworks/types/ofBaseTypes.h
+c000000004D3302B700000000000012E5
+t1295188663
+s4837
+i"ofPoint.h"
+i"ofRectangle.h"
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/types/ofColor.h
+c000000004D3302B70000000000000AFD
+t1295188663
+s2813
+
+N/Work/openFrameworks/libs/openFrameworks/types/ofPoint.h
+c000000004D3302B7000000000000003C
+t1295188663
+s60
+i"ofVec3f.h"
+
+N/Work/openFrameworks/libs/openFrameworks/types/ofRectangle.h
+c000000004D3302B70000000000000420
+t1295188663
+s1056
+i"ofPoint.h"
+
+N/Work/openFrameworks/libs/openFrameworks/types/ofTypes.h
+c000000004D3302B7000000000000089A
+t1295188663
+s2202
+i"ofConstants.h"
+i"ofColor.h"
+i"Poco/Mutex.h"
+
+N/Work/openFrameworks/libs/openFrameworks/utils/ofConstants.h
+c000000004D3EBF110000000000002C1A
+t1295957777
+s11290
+i<TargetConditionals.h>
+i<windows.h>
+i"GL\glew.h"
+i"GL\wglew.h"
+i"glu.h"
+i<unistd.h>
+i"glew.h"
+i<OpenGL/gl.h>
+i<ApplicationServices/ApplicationServices.h>
+i<unistd.h>
+i<GL/glew.h>
+i<GL/gl.h>
+i<GL/glx.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i"glu.h"
+i<cstdlib>
+i<cstdio>
+i<cstdarg>
+i<cmath>
+i<ctime>
+i<cstdlib>
+i<string>
+i<iostream>
+i<vector>
+i<cstring>
+i<sstream>
+i<iomanip>
+i<fstream>
+
+N/Work/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h
+c000000004D3EBD380000000000000C1B
+t1295957304
+s3099
+i"ofConstants.h"
+
+N/Work/openFrameworks/libs/openFrameworks/utils/ofLog.h
+c000000004D3EBF110000000000004226
+t1295957777
+s16934
+i<ofConstants.h>
+i<Poco/AutoPtr.h>
+i<Poco/Logger.h>
+i<Poco/FileChannel.h>
+i<Poco/ConsoleChannel.h>
+i<Poco/SplitterChannel.h>
+
+N/Work/openFrameworks/libs/openFrameworks/utils/ofSystemUtils.h
+c000000004D3EBF1100000000000001A8
+t1295957777
+s424
+
+N/Work/openFrameworks/libs/openFrameworks/utils/ofThread.h
+c000000004D3EBF11000000000000050C
+t1295957777
+s1292
+i"ofConstants.h"
+i"ofTypes.h"
+i<process.h>
+i<pthread.h>
+
+N/Work/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.h
+c000000004D3EBF110000000000000712
+t1295957777
+s1810
+i"ofThread.h"
+i"ofEvents.h"
+i"ofFileUtils.h"
+i<deque>
+i<queue>
+
+N/Work/openFrameworks/libs/openFrameworks/utils/ofUtils.h
+c000000004D3EBD380000000000000F9E
+t1295957304
+s3998
+i"ofConstants.h"
+i<bitset>
+i"ofLog.h"
+i<shellapi.h>
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofDirectShowGrabber.h
+c000000004D3302B70000000000000496
+t1295188663
+s1174
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofBaseTypes.h"
+i"ofPixels.h"
+i"videoInput.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofGstUtils.h
+c000000004D3EBD380000000000000F9E
+t1295957304
+s3998
+i<gst/gst.h>
+i<gst/app/gstappsink.h>
+i"ofConstants.h"
+i"ofBaseTypes.h"
+i"ofPixels.h"
+i"ofTypes.h"
+i"ofEvents.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h
+c000000004D3EBD380000000000000522
+t1295957304
+s1314
+i"ofGstUtils.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofGstVideoPlayer.h
+c000000004D3EBD380000000000000554
+t1295957304
+s1364
+i"ofGstUtils.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofQtUtils.h
+c000000004D3302B70000000000000697
+t1295188663
+s1687
+i"ofConstants.h"
+i<QuickTime/QuickTime.h>
+i<CoreServices/CoreServices.h>
+i<ApplicationServices/ApplicationServices.h>
+i<QTML.h>
+i<FixMath.h>
+i<QuickTimeComponents.h>
+i<TextUtils.h>
+i<MediaHandlers.h>
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofQuickTimeGrabber.h
+c000000004D3302B7000000000000060F
+t1295188663
+s1551
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofBaseTypes.h"
+i"ofQtUtils.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofQuickTimePlayer.h
+c000000004D3302B700000000000008B7
+t1295188663
+s2231
+i"ofConstants.h"
+i"ofBaseTypes.h"
+i"ofPixels.h"
+i"ofQtUtils.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofVideoGrabber.h
+c000000004D3EBD380000000000000914
+t1295957304
+s2324
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofBaseTypes.h"
+i"ofPixels.h"
+i"ofiPhoneVideoGrabber.h"
+i"ofQuickTimeGrabber.h"
+i"ofDirectShowGrabber.h"
+i"ofGstVideoGrabber.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofVideoPlayer.h
+c000000004D3EBD380000000000000AA8
+t1295957304
+s2728
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofBaseTypes.h"
+i"ofGstVideoPlayer.h"
+i"ofQuickTimePlayer.h"
+i"ofiPhoneVideoPlayer.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofiPhoneVideoGrabber.h
+c000000004D3302B70000000000000302
+t1295188663
+s770
+i"ofMain.h"
+
+N/Work/openFrameworks/libs/openFrameworks/video/ofiPhoneVideoPlayer.h
+c000000004D3302B700000000000005A5
+t1295188663
+s1445
+i"ofMain.h"
+
+N/Work/openFrameworks/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+c000000004D3F13A90000000000E4D028
+t1295979433
+s14995496
+
+N/Work/openFrameworks/libs/poco/include/Poco/AbstractDelegate.h
+c000000004D3302B70000000000000B59
+t1295188663
+s2905
+i"Poco/Foundation.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/AbstractEvent.h
+c000000004D3302B70000000000002D7C
+t1295188663
+s11644
+i"Poco/Foundation.h"
+i"Poco/SingletonHolder.h"
+i"Poco/SharedPtr.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveMethod.h"
+i"Poco/Mutex.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/ActiveMethod.h
+c000000004D3302B70000000000001C64
+t1295188663
+s7268
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveRunnable.h"
+i"Poco/ActiveStarter.h"
+i"Poco/AutoPtr.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/ActiveResult.h
+c000000004D3302B70000000000002E66
+t1295188663
+s11878
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Work/openFrameworks/libs/poco/include/Poco/ActiveRunnable.h
+c000000004D3302B70000000000001785
+t1295188663
+s6021
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/Runnable.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i"Poco/Exception.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/ActiveStarter.h
+c000000004D3302B70000000000000927
+t1295188663
+s2343
+i"Poco/Foundation.h"
+i"Poco/ThreadPool.h"
+i"Poco/ActiveRunnable.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Any.h
+c000000004D3302B700000000000020E8
+t1295188663
+s8424
+i"Poco/Exception.h"
+i<algorithm>
+i<typeinfo>
+
+N/Work/openFrameworks/libs/poco/include/Poco/AtomicCounter.h
+c000000004D3302B70000000000001D06
+t1295188663
+s7430
+i"Poco/Foundation.h"
+i"Poco/UnWindows.h"
+i<libkern/OSAtomic.h>
+i"Poco/Mutex.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/AutoPtr.h
+c000000004D3302B70000000000001E0C
+t1295188663
+s7692
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Bugcheck.h
+c000000004D3302B700000000000014A9
+t1295188663
+s5289
+i"Poco/Foundation.h"
+i<string>
+i<iostream>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Channel.h
+c000000004D3302B70000000000000C1A
+t1295188663
+s3098
+i"Poco/Foundation.h"
+i"Poco/Configurable.h"
+i"Poco/Mutex.h"
+i"Poco/RefCountedObject.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/CompareFunctions.h
+c000000004D3302B700000000000007EC
+t1295188663
+s2028
+i"Poco/Foundation.h"
+i<functional>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Config.h
+c000000004D3302B70000000000000E22
+t1295188663
+s3618
+
+N/Work/openFrameworks/libs/poco/include/Poco/Configurable.h
+c000000004D3302B70000000000000C8C
+t1295188663
+s3212
+i"Poco/Foundation.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/ConsoleChannel.h
+c000000004D3302B70000000000000AAF
+t1295188663
+s2735
+i"Poco/Foundation.h"
+i"Poco/Channel.h"
+i"Poco/Mutex.h"
+i<ostream>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Delegate.h
+c000000004D3302B70000000000001828
+t1295188663
+s6184
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/FunctionDelegate.h"
+i"Poco/Expire.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Event.h
+c000000004D3302B70000000000000E21
+t1295188663
+s3617
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Event_WIN32.h"
+i"Poco/Event_POSIX.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Event_POSIX.h
+c000000004D3302B70000000000000A91
+t1295188663
+s2705
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Event_WIN32.h
+c000000004D3302B7000000000000093F
+t1295188663
+s2367
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Exception.h
+c000000004D3302B7000000000000283D
+t1295188663
+s10301
+i"Poco/Foundation.h"
+i<stdexcept>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Expire.h
+c000000004D3302B70000000000000D0D
+t1295188663
+s3341
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/Timestamp.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/FIFOEvent.h
+c000000004D3302B70000000000000B15
+t1295188663
+s2837
+i"Poco/AbstractEvent.h"
+i"Poco/FIFOStrategy.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/CompareFunctions.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/FIFOStrategy.h
+c000000004D3302B70000000000001116
+t1295188663
+s4374
+i"Poco/NotificationStrategy.h"
+i<map>
+i<list>
+i<memory>
+
+N/Work/openFrameworks/libs/poco/include/Poco/FileChannel.h
+c000000004D3302B7000000000000285D
+t1295188663
+s10333
+i"Poco/Foundation.h"
+i"Poco/Channel.h"
+i"Poco/Timestamp.h"
+i"Poco/Mutex.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Format.h
+c000000004D3302B70000000000001D9F
+t1295188663
+s7583
+i"Poco/Foundation.h"
+i"Poco/Any.h"
+i<vector>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Foundation.h
+c000000004D3302B700000000000010BE
+t1295188663
+s4286
+i"Poco/Config.h"
+i"Poco/Platform.h"
+i"Poco/Platform_WIN32.h"
+i"Poco/Platform_VMS.h"
+i"Poco/Platform_POSIX.h"
+i"Poco/Bugcheck.h"
+i"Poco/Types.h"
+i<string>
+
+N/Work/openFrameworks/libs/poco/include/Poco/FunctionDelegate.h
+c000000004D3302B700000000000013C8
+t1295188663
+s5064
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Logger.h
+c000000004D359EB50000000000006A41
+t1295359669
+s27201
+i"Poco/Foundation.h"
+i"Poco/Channel.h"
+i"Poco/Message.h"
+i"Poco/Format.h"
+i<map>
+i<vector>
+i<cstddef>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Message.h
+c000000004D3302B70000000000001EBF
+t1295188663
+s7871
+i"Poco/Foundation.h"
+i"Poco/Timestamp.h"
+i<map>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Mutex.h
+c000000004D3302B70000000000001D9F
+t1295188663
+s7583
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/ScopedLock.h"
+i"Poco/Mutex_WINCE.h"
+i"Poco/Mutex_WIN32.h"
+i"Poco/Mutex_POSIX.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Mutex_POSIX.h
+c000000004D3302B70000000000000AC3
+t1295188663
+s2755
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Mutex_WIN32.h
+c000000004D3302B70000000000000A04
+t1295188663
+s2564
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Mutex_WINCE.h
+c000000004D3302B70000000000000870
+t1295188663
+s2160
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/NotificationStrategy.h
+c000000004D3302B70000000000000B48
+t1295188663
+s2888
+i"Poco/Foundation.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Platform.h
+c000000004D3302B70000000000001AF7
+t1295188663
+s6903
+
+N/Work/openFrameworks/libs/poco/include/Poco/Platform_POSIX.h
+c000000004D3302B70000000000000843
+t1295188663
+s2115
+
+N/Work/openFrameworks/libs/poco/include/Poco/Platform_VMS.h
+c000000004D3302B70000000000000BAA
+t1295188663
+s2986
+
+N/Work/openFrameworks/libs/poco/include/Poco/Platform_WIN32.h
+c000000004D3302B70000000000000DCF
+t1295188663
+s3535
+
+N/Work/openFrameworks/libs/poco/include/Poco/RefCountedObject.h
+c000000004D3302B70000000000000BB1
+t1295188663
+s2993
+i"Poco/Foundation.h"
+i"Poco/AtomicCounter.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Runnable.h
+c000000004D3302B70000000000000861
+t1295188663
+s2145
+i"Poco/Foundation.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/ScopedLock.h
+c000000004D3302B70000000000000B7F
+t1295188663
+s2943
+i"Poco/Foundation.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/SharedPtr.h
+c000000004D3302B70000000000002278
+t1295188663
+s8824
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/AtomicCounter.h"
+i<algorithm>
+
+N/Work/openFrameworks/libs/poco/include/Poco/SignalHandler.h
+c000000004D3302B700000000000011EB
+t1295188663
+s4587
+i"Poco/Foundation.h"
+i<vector>
+i<setjmp.h>
+
+N/Work/openFrameworks/libs/poco/include/Poco/SingletonHolder.h
+c000000004D3302B70000000000000A67
+t1295188663
+s2663
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/SplitterChannel.h
+c000000004D3302B70000000000000C09
+t1295188663
+s3081
+i"Poco/Foundation.h"
+i"Poco/Channel.h"
+i"Poco/Mutex.h"
+i<vector>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Thread.h
+c000000004D3302B70000000000001E10
+t1295188663
+s7696
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Thread_WINCE.h"
+i"Poco/Thread_WIN32.h"
+i"Poco/Thread_POSIX.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/ThreadPool.h
+c000000004D3302B70000000000001C8A
+t1295188663
+s7306
+i"Poco/Foundation.h"
+i"Poco/Thread.h"
+i"Poco/Mutex.h"
+i<vector>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Thread_POSIX.h
+c000000004D3302B700000000000013B7
+t1295188663
+s5047
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/SignalHandler.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i<pthread.h>
+i<limits.h>
+i<sys/select.h>
+i<errno.h>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Thread_WIN32.h
+c000000004D3302B70000000000001301
+t1295188663
+s4865
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/UnWindows.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Thread_WINCE.h
+c000000004D3302B70000000000001276
+t1295188663
+s4726
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/UnWindows.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/Timestamp.h
+c000000004D3302B70000000000001A41
+t1295188663
+s6721
+i"Poco/Foundation.h"
+i<ctime>
+
+N/Work/openFrameworks/libs/poco/include/Poco/Types.h
+c000000004D3302B70000000000001926
+t1295188663
+s6438
+i"Poco/Foundation.h"
+
+N/Work/openFrameworks/libs/poco/include/Poco/UnWindows.h
+c000000004D3302B70000000000000FC3
+t1295188663
+s4035
+i<windows.h>
+
+N/usr/include/TargetConditionals.h
+c000000004A11A9B300000000000031E9
+t1242671539
+s12777
+
+N/usr/include/assert.h
+c000000004BBD2CE90000000000000DCB
+t1270689001
+s3531
+
+N/usr/include/ctype.h
+c000000004BBD2CE90000000000002C18
+t1270689001
+s11288
+
+N/usr/include/errno.h
+c000000004BBD2CE900000000000003EB
+t1270689001
+s1003
+
+N/usr/include/inttypes.h
+c000000004BBD2CE900000000000027D1
+t1270689001
+s10193
+
+N/usr/include/libkern/OSAtomic.h
+c000000004BBD2CE90000000000002519
+t1270689001
+s9497
+
+N/usr/include/pthread.h
+c000000004BBD2CE900000000000038F0
+t1270689001
+s14576
+
+N/usr/include/setjmp.h
+c000000004BBD2CE90000000000000438
+t1270689001
+s1080
+
+N/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/usr/include/sys/_types.h
+c000000004C2399490000000000001845
+t1277401417
+s6213
+
+N/usr/include/sys/select.h
+c000000004C23994700000000000016A2
+t1277401415
+s5794
+
+N/usr/include/sys/stat.h
+c000000004C2399480000000000004A1D
+t1277401416
+s18973
+
+N/usr/include/termios.h
+c000000004BBD2CE900000000000004D4
+t1270689001
+s1236
+
+N/usr/include/unistd.h
+c000000004BBD2CE9000000000000563E
+t1270689001
+s22078
+
+N/var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h.gch
+t1295979436
+s53737264
+
+NopenFrameworks-Info.plist
+c000000004D3EBF560000000000000277
+t1295957846
+s631
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies317672233#317672233#0(0"0(0#1#0"8718317280#0"0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ColorUtils.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672242.977056
+e317672243.034293
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ColorUtils.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@103"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.cpp317672242#317672243#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#95"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.cpp8702872416#1937"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/ColorUtils.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ColorUtils.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiContainer.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiContainer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672238.115413
+e317672240.257062
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiContainer.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiContainer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@105"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiContainer.cpp317672238#317672240#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#97"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiContainer.cpp8692162528#1941"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiContainer.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiContainer.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiControl.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672238.281633
+e317672240.087724
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiControl.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@103"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiControl.cpp317672238#317672240#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#95"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiControl.cpp8711853344#1937"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiControl.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiResources.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiResources.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672240.087970
+e317672241.170490
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiResources.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiResources.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@105"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiResources.cpp317672240#317672241#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#97"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiResources.cpp8722554400#1941"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiResources.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiResources.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiTypes.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672240.257179
+e317672242.976935
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiTypes.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiGrid.h:10,
+o                 from /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp:35:
+o/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h: In member function 'void GridSequence::valueFromString(std::string)':
+o/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h:109: warning: format '%d' expects type 'int', but argument 2 has type 'size_t'
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@101"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp317672240#317672242#0(681"In file included from /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiGrid.h:10,                 from /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp:35:/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h: In member function 'void GridSequence::valueFromString(std::string)':/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h:109: warning: format '%d' expects type 'int', but argument 2 has type 'size_t'i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done1(22@64"Format '%d' expects type 'int', but argument 2 has type 'size_t'317672241#414#175#3(7@115"In file included from /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp317672241#18446744073709551615#0#0(6@93"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp317060264#35#0#35#0#0"0(7@122"In file included from /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiGrid.h317672241#18446744073709551615#0#0(6@100"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/controls/basic/GuiGrid.h312980492#10#0#10#0#0"0(13@163"Format '%d' expects type 'int', but argument 2 has type 'size_t' in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h317672241#18446744073709551615#0#0(6@95"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h294768367#109#0#109#0#0"0(6@95"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/GridSequence.h294768367#109#0#109#0#56"format '*' expects type '*', but argument * has type '*'0(0#0#93"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp8719455168#1933"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/base/GuiTypes.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiTypes.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/StringUtils.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672243.034385
+e317672243.386875
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/StringUtils.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@104"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.cpp317672243#317672243#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#96"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.cpp8710047968#1939"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/util/StringUtils.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/StringUtils.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672236.468961
+e317672238.115282
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@66"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/main.cpp317672236#317672238#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#58"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/main.cpp8695500896#1894"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/main.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlGui.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/ofxXmlGui.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672241.170577
+e317672243.351454
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlGui.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/ofxXmlGui.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@97"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/ofxXmlGui.cpp317672241#317672243#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#89"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/ofxXmlGui.cpp8719337568#1930"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlGui/src/ofxXmlGui.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlGui.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlSettings.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672244.137357
+e317672245.721912
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlSettings.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@107"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp317672244#317672245#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#99"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp8719046400#1945"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/ofxXmlSettings.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672236.469891
+e317672238.281543
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@69"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.cpp317672236#317672238#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#61"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.cpp8717933664#1900"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/src/testApp.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxml.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672243.351540
+e317672244.137264
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxml.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@101"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.cpp317672243#317672244#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#93"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.cpp8693862624#1932"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxml.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxml.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlerror.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672243.386969
+e317672243.856958
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlerror.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@106"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp317672243#317672243#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#98"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp8719327584#1942"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlerror.o0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlparser.o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s317672243.857051
+e317672244.576234
+r1
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlparser.o
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@107"Compile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp317672243#317672244#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#99"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp8693301184#1944"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/tinyxmlparser.o0#
+
+CLd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug normal i386
+s317672245.721996
+e317672248.443895
+r1
+xLd
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug
+xnormal
+xi386
+old: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found
+old: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found
+old: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found
+old: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found
+old: warning: std::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__copy_backward<false, std::random_access_iterator_tag>::__copy_b<std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o
+old: warning: std::_Vector_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base()has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o
+old: warning: __gnu_cxx::new_allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o
+old: warning: std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a(ofAppGlutWindow.o)
+old: warning: std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::push_back(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o
+lSLF07#2@110"Link /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug317672245#317672248#0(3037"ld: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not foundld: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not foundld: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not foundld: warning: directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not foundld: warning: std::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__copy_backward<false, std::random_access_iterator_tag>::__copy_b<std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.old: warning: std::_Vector_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base()has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.old: warning: __gnu_cxx::new_allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.old: warning: std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a(ofAppGlutWindow.o)ld: warning: std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::push_back(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o9(22@108"Directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found317672248#0#122#0(6@0"317672248#0#0#0#0#0"0(22@108"Directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found317672248#122#122#0(6@0"317672248#0#0#0#0#0"0(22@108"Directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found317672248#244#122#0(6@0"317672248#0#0#0#0#0"0(22@108"Directory '/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx' following -L not found317672248#366#122#0(6@0"317672248#0#0#0#0#0"0(22@752"Std::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__copy_backward<false, std::random_access_iterator_tag>::__copy_b<std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o317672248#488#766#0(6@0"317672248#0#0#0#0#0"0(22@441"Std::_Vector_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base()has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o317672248#1254#455#0(6@0"317672248#0#0#0#0#0"0(22@380"__gnu_cxx::new_allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o317672248#1709#394#0(6@0"317672248#0#0#0#0#0"0(22@398"Std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a(ofAppGlutWindow.o)317672248#2103#412#0(6@0"317672248#0#0#0#0#0"0(22@508"Std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::push_back(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)has different visibility (hidden) in ../../../libs/poco/lib/osx/PocoFoundation.a(StringTokenizer.o) and (default) in /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/GuiControl.o317672248#2515#522#0(6@0"317672248#0#0#0#0#0"0(0#0#0"8690028160#2111"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    /Developer/usr/bin/g++-4.2 -arch i386 -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/freeimage/lib/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/FreeImage/lib/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/poco/lib/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/rtAudio/lib/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/fmodex/lib/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/freetype/lib/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/FreeImage/lib/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx -L/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -filelist /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/emptyExampleDebug.LinkFileList -dead_strip ../../../libs/poco/lib/osx/PocoUtil.a ../../../libs/poco/lib/osx/PocoXML.a ../../../libs/poco/lib/osx/PocoFoundation.a ../../../libs/poco/lib/osx/PocoNet.a ../../../libs/rtAudio/lib/osx/rtAudio.a ../../../libs/freetype/lib/osx/freetype.a ../../../libs/FreeImage/lib/osx/freeimage.a ../../../libs/fmodex/lib/osx/libfmodex.dylib ../../../libs/glew/lib/osx/glew.a /Work/openFrameworks/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework IOKit -framework GLUT -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug0#
+
+CPBXCp bin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework ../../../libs/glut/lib/osx/GLUT.framework
+s317672248.540632
+e317672248.797778
+r1
+xPBXCp
+xbin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework
+x../../../libs/glut/lib/osx/GLUT.framework
+lSLF07#2@46"Copy ../../../libs/glut/lib/osx/GLUT.framework317672248#317672248#0(0"0(0#0#87"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx/GLUT.framework8702228800#395"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx/GLUT.framework /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/emptyExampleDebug.app/Contents/Frameworks0#
+
+CPhaseScriptExecution "Run Script" /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+s317672248.444011
+e317672248.540554
+r1
+xPhaseScriptExecution
+xRun Script
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+lSLF07#2@36"Run custom shell script 'Run Script'317672248#317672248#0(0"0(0#0#0"8708733856#20796"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER marek    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build    setenv BUILD_ROOT /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/    setenv CACHE_ROOT /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/    setenv CONFIGURATION_TEMP_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug    setenv CONTENTS_FOLDER_PATH emptyExampleDebug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources    setenv DERIVED_FILE_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/emptyExample.dst    setenv DWARF_DSYM_FILE_NAME emptyExampleDebug.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH emptyExampleDebug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH emptyExampleDebug.app/Contents/MacOS    setenv EXECUTABLE_NAME emptyExampleDebug    setenv EXECUTABLE_PATH emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug    setenv FILE_LIST /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH emptyExampleDebug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/\"  \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME emptyExampleDebug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//include\" ../../../libs/openFrameworks/** ../../../libs/freetype/include/ ../../../libs/freetype/include/freetype2 ../../../libs/poco/include ../../../addons/ ../../../libs/glew/include/GL/** ../../../libs/fmodex/include/** ../../../libs/freeimage/include/**"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH emptyExampleDebug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH emptyExampleDebug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/emptyExample.dst/Users/marek/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER marek    setenv INSTALL_PATH /Users/marek/Applications    setenv INSTALL_ROOT /tmp/emptyExample.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/\"  \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/freeimage/lib/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/FreeImage/lib/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx\"  \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/poco/lib/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/rtAudio/lib/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx\"       \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/fmodex/lib/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/freetype/lib/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/FreeImage/lib/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx\" \"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/freeimage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/fmodex/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/freetype/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/poco/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/rtAudio/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glew/libs/osx\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/emptyExampleDebug.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_VERSION_ACTUAL 1066    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0606    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects    setenv OBJECT_FILE_DIR_normal /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Objects-normal    setenv OBJROOT /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv OTHER_LDFLAGS "\"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\" \"../../../libs/freetype/lib/osx/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/glew/lib/osx/glew.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_1 "\"../../../libs/poco/lib/osx/PocoUtil.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_2 "\"../../../libs/poco/lib/osx/PocoXML.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_3 "\"../../../libs/poco/lib/osx/PocoFoundation.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_4 "\"../../../libs/poco/lib/osx/PocoNet.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_5 "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_6 "\"../../../libs/freetype/lib/osx/freetype.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_7 "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_8 "\"../../../libs/fmodex/lib/osx/libfmodex.dylib\""    setenv OTHER_LDFLAGS_QUOTED_FOR_PROJECT_9 "\"../../../libs/glew/lib/osx/glew.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH emptyExampleDebug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/PkgInfo    setenv PKGINFO_PATH emptyExampleDebug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 10M2423    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH emptyExampleDebug.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH emptyExampleDebug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME emptyExampleDebug    setenv PRODUCT_SETTINGS_PATH /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/openFrameworks-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT emptyExample    setenv PROJECT_DERIVED_FILE_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/DerivedSources    setenv PROJECT_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv PROJECT_FILE_PATH /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/emptyExample.xcodeproj    setenv PROJECT_NAME emptyExample    setenv PROJECT_TEMP_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build    setenv PUBLIC_HEADERS_FOLDER_PATH emptyExampleDebug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH emptyExampleDebug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH emptyExampleDebug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv SRCROOT /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/SymbolRepositories    setenv SYMROOT /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME emptyExample    setenv TARGET_BUILD_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/    setenv TARGET_NAME emptyExample    setenv TARGET_TEMP_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_FILES_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_FILE_DIR /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_ROOT /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH emptyExampleDebug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER marek    setenv USER_APPS_DIR /Users/marek/Applications    setenv USER_LIBRARY_DIR /Users/marek/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH emptyExampleDebug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER marek    setenv VERSION_INFO_FILE emptyExampleDebug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:emptyExampleDebug  PROJECT:emptyExample-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME emptyExampleDebug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh0#
+
+CProcessInfoPlistFile /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/Info.plist openFrameworks-Info.plist
+s317672233.392605
+e317672233.457374
+r1
+xProcessInfoPlistFile
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/Info.plist
+xopenFrameworks-Info.plist
+lSLF07#2@33"Process openFrameworks-Info.plist317672233#317672233#0(0"0(0#0#71"/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/openFrameworks-Info.plist8723196960#344"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app/Contents/Info.plist0#
+
+CProcessPCH++ /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.gcc.4_2
+s317672233.457485
+e317672236.468840
+r1
+xProcessPCH++
+x/var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h.gch
+x/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@71"Precompile /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h317672233#317672236#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#60"/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h8718063488#1775"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin -F/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/../../../libs/glut/lib/osx -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/.settings -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I../../../libs/glew/include/GL -I../../../libs/fmodex/include -I../../../libs/freeimage/include -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/1W/1Ww1bsOsFAylizxt4c99sE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-eaeaowbeqnuvxvdszilwstwksrqr/Carbon.h.gch0#
+
+CTouch /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app
+s317672248.797913
+e317672248.800481
+r1
+xTouch
+x/Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app
+lSLF07#2@78"Touch /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app317672248#317672248#0(0"0(0#0#0"8693093664#148"    cd /Work/openFrameworks/apps/ofxXmlGui/GuiEditor    /usr/bin/touch -c /Work/openFrameworks/apps/ofxXmlGui/GuiEditor/bin//emptyExampleDebug.app0#
+
