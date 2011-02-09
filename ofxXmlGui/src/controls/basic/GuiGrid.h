@@ -3,7 +3,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 05/05/2010.
- *  Copyright 2010 Marek Bereza. All rights reserved.
  *
  */
 #include "GuiControl.h"
@@ -85,7 +84,7 @@ public:
 		for(int i = 1; i < steps; i++) {
 			ofLine(x + cellWidth*i, y, x + cellWidth*i, y +height);
 		}
-		//ofLine(x+width*position, y, x+width*position, y*height);
+		ofLine(x+width*position, y, x+width*position, y*height);
 		ofFill();
 		 
 	}

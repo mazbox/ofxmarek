@@ -3,7 +3,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 12/02/2010.
- *  Copyright 2010 Apple Inc. All rights reserved.
  *
  */
 
@@ -267,4 +266,35 @@ void GuiControl::makeHidden() {
 }
 void GuiControl::setResources(GuiResources *res) {
 	resources = res;
+}
+
+GuiControl *GuiControl::under(GuiControl *rel, float padding) {
+	this->x = rel->x;
+	this->y = rel->y + rel->height + padding;
+	return this;
+}
+
+GuiControl *GuiControl::underRight(GuiControl *rel, float padding) {
+	this->x = rel->x + rel->width - this->width;
+	this->y = rel->y + rel->height + padding;
+	return this;
+}
+
+GuiControl *GuiControl::size(float w, float h) {
+	this->width = w;
+	this->height = h;
+	return this;
+}
+
+GuiControl *GuiControl::position(float x, float y) {
+	this->x = x;
+	this->y = y;
+	return this;
+}
+
+// position to the right
+GuiControl *GuiControl::right(GuiControl *rel, float padding) {
+	this->y = rel->y;
+	this->x = rel->x + rel->width + padding;
+	return this;
 }

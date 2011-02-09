@@ -3,7 +3,6 @@
  *  GuiDownloader
  *
  *  Created by Marek Bereza on 28/03/2010.
- *  Copyright 2010 Marek Bereza. All rights reserved.
  *
  */
 #pragma once
@@ -19,6 +18,7 @@
 #include "GuiPanner.h"
 #include "GuiTitle.h"
 #include "GuiSlider2D.h"
+#include "GuiDrawable.h"
 
 /**
  * This is a simple wrapper for the ofxXmlGui library. It lets you build up
@@ -41,6 +41,9 @@ public:
 	void prevPage();
 	
 	GuiTitle *addTitle(string label);
+	
+	/** add an ofBaseDraws to the gui */
+	GuiDrawable *addDrawable(string name, ofBaseDraws &drawable);
 	
 	/** Add a generic slider (for floats) */
 	GuiSlider	*addSlider(string name, float &ptr, float minValue, float maxValue);
@@ -112,7 +115,7 @@ public:
 	
 	
 private:
-	float size;
+	float controlSize;
 	string xmlFile;
 	bool saving;
 	vector<GuiContainer*> pages;

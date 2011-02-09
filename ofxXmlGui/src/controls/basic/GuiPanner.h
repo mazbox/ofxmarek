@@ -3,7 +3,6 @@
  *  Snowboard
  *
  *  Created by Marek Bereza on 09/12/2010.
- *  Copyright 2010 Marek Bereza. All rights reserved.
  *
  
  *  TODO: Doesn't work for graphics files, just plain colours I don't think.

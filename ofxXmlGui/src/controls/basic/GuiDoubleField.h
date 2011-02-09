@@ -3,7 +3,6 @@
  *  Snowboard
  *
  *  Created by Marek Bereza on 06/12/2010.
- *  Copyright 2010 Marek Bereza. All rights reserved.
  *
  */
 

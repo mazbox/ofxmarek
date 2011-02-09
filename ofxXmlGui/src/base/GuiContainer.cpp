@@ -3,7 +3,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 12/02/2010.
- *  Copyright 2010 Apple Inc. All rights reserved.
  *
  */
 
@@ -19,6 +18,8 @@ GuiContainer::GuiContainer() {
 	adjustingBounds = false;
 	movable = false;
 	moving = false;
+	listeners = NULL;
+	numListeners = 0;
 	resources = &res;
 	bg = NULL;
 	bgImgUrl = "";
@@ -123,7 +124,9 @@ void GuiContainer::saveValues(string file) {
 	
 	xml.saveFile(file);
 	
+	
 }
+
 void GuiContainer::loadFromXml(string file) {
 	controls.clear();
 	ofxXmlSettings xml;
@@ -222,9 +225,13 @@ GuiControl *GuiContainer::add(string _type, string _name, string _controlId) {
 
 
 void GuiContainer::addListener(GuiListener *_listener) {
-	GuiListener ** nl = new GuiListener*[numListeners+1];
-	for(int i = 0; i < numListeners; i++) {
-		nl[i] = listeners[i];
+	
+	
+	GuiListener **nl = new GuiListener*[numListeners+1];
+	int l;
+	
+	for(l = 0; l < numListeners; l++) {
+		nl[l] = listeners[l];
 		
 	}
 	nl[numListeners] = _listener;
@@ -232,11 +239,25 @@ void GuiContainer::addListener(GuiListener *_listener) {
 	delete listeners;
 	listeners = nl;
 	
-	for(int i = 0; i < controls.size(); i++) {
-		controls[i]->listeners = listeners;
-		controls[i]->numListeners = numListeners;
+	propagateListeners(listeners, numListeners);
+	
+}
+
+// this copies all the listeners coming in to this and all children
+void GuiContainer::propagateListeners(GuiListener **listeners, int numListeners) {
+	
+	this->listeners = listeners;
+	this->numListeners = numListeners;
+	for(int l = 0; l < controls.size(); l++) {
+		if(controls[l]->isContainer()) {
+			((GuiContainer*)controls[l])->propagateListeners(listeners, numListeners);
+		} else {
+			controls[l]->listeners = listeners;
+			controls[l]->numListeners = numListeners;
+		}
 	}
 }
+
 void GuiContainer::touchOver(int _x, int _y, int touchId) {
 	if(!enabled) return;
 	for(int i = controls.size()-1; i >= 0; i--) {
@@ -579,7 +600,7 @@ void GuiContainer::add(GuiControl *c) {
 		height = MAX(height, c->y+c->height+paddingY);
 		width = MAX(width, c->x+c->width+paddingX);
 	}
-	if(c->listeners==NULL) {
+	if(c->listeners==NULL &&listeners!=NULL) {
 		c->listeners = listeners;
 		c->numListeners = numListeners;
 	}

@@ -3,7 +3,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 13/02/2010.
- *  Copyright 2010 Apple Inc. All rights reserved.
  *
  */
 #include "GuiToggle.h"

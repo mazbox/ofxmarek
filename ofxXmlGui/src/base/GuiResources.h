@@ -5,7 +5,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 12/02/2010.
- *  Copyright 2010 Apple Inc. All rights reserved.
  *
  */
 #include <map>

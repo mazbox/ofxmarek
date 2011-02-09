@@ -3,7 +3,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 05/05/2010.
- *  Copyright 2010 Marek Bereza. All rights reserved.
  *
  */
 
@@ -11,9 +10,9 @@
 
 #include "GuiControl.h"
 
-#define R(A)  ((A >> 16) & 0xff)
-#define G(A) ((A >> 8) & 0xff)
-#define B(A) ((A >> 0) & 0xff)
+#define hexValR(A)  ((A >> 16) & 0xff)
+#define hexValG(A) ((A >> 8) & 0xff)
+#define hexValB(A) ((A >> 0) & 0xff)
 
 
 class GuiMeter: public GuiControl {
@@ -56,13 +55,13 @@ public:
 	
 	void calcColorArray() {
 
-		colors[0] = colors[3] = R(fgTopColor);
-		colors[1] = colors[4] = G(fgTopColor);
-		colors[2] = colors[5] = B(fgTopColor);
+		colors[0] = colors[3] = hexValR(fgTopColor);
+		colors[1] = colors[4] = hexValG(fgTopColor);
+		colors[2] = colors[5] = hexValB(fgTopColor);
 		
-		colors[6] = colors[9] =  R(fgBottomColor);
-		colors[7] = colors[10] = G(fgBottomColor);
-		colors[8] = colors[11] = B(fgBottomColor);
+		colors[6] = colors[9] =  hexValR(fgBottomColor);
+		colors[7] = colors[10] = hexValG(fgBottomColor);
+		colors[8] = colors[11] = hexValB(fgBottomColor);
 	}
 	
 	void load() {

@@ -3,7 +3,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 15/04/2010.
- *  Copyright 2010 Marek Bereza. All rights reserved.
  *
  */
 

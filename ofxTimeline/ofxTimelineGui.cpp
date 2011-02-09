@@ -18,7 +18,8 @@ ofxTimelineGui::ofxTimelineGui() {
 	playhead = 0;
 	timelineHeight = 600;
 	window.setRange(0, 10, -10, 10);//0, -1, 10, 2);
-	gui.setup(0, timelineHeight, 250, LAYOUT_ABSOLUTE);
+	gui.setup(0, timelineHeight, 250);//, LAYOUT_ABSOLUTE);
+	gui.setLayoutType(LAYOUT_ABSOLUTE);
 	graphList = gui.addList("Graph", currentTimelineIndex, "");
 	graphList->set(0, 0, 300, ofGetHeight() - timelineHeight);
 

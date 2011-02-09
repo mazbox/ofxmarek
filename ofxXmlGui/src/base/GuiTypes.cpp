@@ -3,7 +3,6 @@
  *  Gui
  *
  *  Created by Marek Bereza on 12/02/2010.
- *  Copyright 2010 Apple Inc. All rights reserved.
  *
  */
 
@@ -35,6 +34,8 @@
 #include "GuiGrid.h"
 #include "GuiPanner.h"
 #include "GuiContainer.h"
+#include "GuiDrawable.h"
+
 
 #define BEGIN_REGISTRY() static bool firstCall = true; if(0) {}
 #define REGISTER(TYPE,CLASS) if(_type==TYPE) { \
@@ -51,6 +52,7 @@ BEGIN_REGISTRY()
 	
 	REGISTER("container", GuiContainer)
 	REGISTER("button", GuiButton)
+	REGISTER("drawable", GuiDrawable)
 	REGISTER("title", GuiTitle)
 	REGISTER("slider", GuiSlider)
 	REGISTER("toggle", GuiToggle)
