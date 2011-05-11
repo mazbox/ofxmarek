@@ -5,6 +5,7 @@
  *  Created by Marek Bereza on 13/02/2010.
  *
  */
+
 #include "GuiImageButton.h"
 class GuiNiceButton: public GuiImageButton {
 public:

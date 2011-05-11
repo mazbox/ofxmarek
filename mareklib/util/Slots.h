@@ -7,7 +7,7 @@
  *
  */
 #include <vector>
-
+#pragma once
 /** 
  * provides a set of slots that can be occupied or not.
  * So you can fill up slots, release slots etc.

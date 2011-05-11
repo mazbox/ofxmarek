@@ -1,6 +1,5 @@
 /*
  *  Properties.h
- *  FordSMax
  *
  *
  *  Created by Marek Bereza on 22/07/2010.
@@ -59,6 +58,13 @@ public:
 	
 	float getFloat(string key, float defaultValue = 0) {
 		return ofToFloat(get(key, ofToString(defaultValue)));
+	}
+	string toString() {
+		string line, buf;
+		ifstream InFile( xmlFilePath.c_str() );
+		while(getline(InFile,line))
+			buf += line;
+		return buf;
 	}
 	
 private:

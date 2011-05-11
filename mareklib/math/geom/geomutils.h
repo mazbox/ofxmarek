@@ -6,3 +6,9 @@
 ofPoint getIntersection(ofPoint a1, ofPoint a2, ofPoint b1, ofPoint b2);
 
 bool pointIsInsideTriangle(ofVec2f pt, ofVec2f v1, ofVec2f v2, ofVec2f v3);
+
+
+/**
+ * Distance of p from line [a to b]
+ */
+float pointLineDistance(ofVec2f a, ofVec2f b, ofVec2f p);

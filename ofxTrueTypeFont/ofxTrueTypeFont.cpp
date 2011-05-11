@@ -84,6 +84,8 @@ static void simplifyDP(float tol, ofPoint* v, int j, int k, int* mk ){
 
 
 void ofxTrueTypeFont::setLetterSpacing(float ls) { letterSpacing = ls; }
+float ofxTrueTypeFont::getLetterSpacing() { return letterSpacing; }
+float ofxTrueTypeFont::getWordSpacing() { return wordSpacing; }
 void ofxTrueTypeFont::setWordSpacing(float ws) { wordSpacing = ws; }
 //-------------------------------------------------------------------
 // needs simplifyDP which is above
@@ -790,19 +792,21 @@ void ofxTrueTypeFont::drawString(string c, float x, float y) {
 		if (cy < nCharacters){ 			// full char set or not?
 			if (c[index] == '\n') {
 				
-				Y = (float) lineHeight;
+				Y = (int) lineHeight;
 				glTranslatef(-X, Y, 0);
 				X = 0 ; //reset X Pos back to zero
 				
 			}else if (c[index] == ' ') {
 				int cy = (int)'p' - NUM_CHARACTER_TO_START;
 				float spaceWidth = (float)cps[cy].width*(float)wordSpacing;
+				spaceWidth = (int)spaceWidth;
 				X += spaceWidth;
 				glTranslatef(spaceWidth, 0, 0);
 			} else {
 				drawChar(cy, 0, 0);
 				X += (float)cps[cy].setWidth*(float)letterSpacing;
-				glTranslatef((float)cps[cy].setWidth*(float)letterSpacing, 0, 0);
+				X = (int)X;
+				glTranslatef((int)((float)cps[cy].setWidth*(float)letterSpacing), 0, 0);
 			}
 		}
 		index++;

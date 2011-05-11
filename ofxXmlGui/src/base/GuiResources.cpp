@@ -14,6 +14,7 @@ ofTrueTypeFont emptyFont;
 GuiResources GuiResources::globals;
 GuiResources::GuiResources() {
 	defaultFont = NULL;
+	basePath = "";
 }
 
 void GuiResources::init(string xmlPath) {
@@ -50,6 +51,7 @@ ofImage *GuiResources::getImage(string path) {
 	if(path=="") return NULL;
 	
 	if(!guiResFileExists(ofToDataPath(basePath+path, true))) {
+		printf("Can't find the file %s\n", (basePath+path).c_str());
 		return NULL;
 	}
 	if(path.find("global")==0) {
@@ -62,7 +64,7 @@ ofImage *GuiResources::getImage(string path) {
 		ofImage *img = new ofImage();
 		img->loadImage(basePath+path);
 		images[path] = img;
-		printf("Loaded file from %s\n", string(basePath+path).c_str());
+		//printf("Loaded file from %s\n", string(basePath+path).c_str());
 	}
 	
 	return images[path];

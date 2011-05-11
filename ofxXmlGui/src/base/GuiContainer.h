@@ -153,12 +153,13 @@ public:
 	
 	vector<GuiControl*> getControls();
 	
+	// adds an actual element to the gui
+	void add(GuiControl *c);
 	
 	int numChildren();
 protected:
 	
-	// adds an actual element to the gui
-	void add(GuiControl *c);
+
 	
 	bool moving;
 	vector<GuiControl*> controls;

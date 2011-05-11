@@ -7,7 +7,7 @@
  *
  */
 #include "ofVec2f.h"
-
+#pragma once
 /**
  * This creates a glowing border around a polygon
  */

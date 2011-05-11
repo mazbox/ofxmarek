@@ -14,6 +14,8 @@
  *
  * see: http://answers.oreilly.com/topic/949-how-to-work-around-the-iphones-anti-aliasing-limitations/
  */
+#pragma once
+
 class BrushedLine {
 public: 
 	BrushedLine() {
@@ -68,6 +70,7 @@ public:
 		glDisableClientState(GL_VERTEX_ARRAY);
 		glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 		if(mustUnbind) unbindImage();
+		
 	}
 	void drawLines(ofVec2f *points, int numPoints, bool close = false) {
 		
@@ -87,7 +90,7 @@ public:
 		}
 		unbindImage();
 	}
-	
+	float size;
 private:
 	
 	void bindImage() {
@@ -106,7 +109,7 @@ private:
 	
 	bool imageBound;
 	ofImage *img;
-	float size;
+	
 	ofVec2f texCoords[8];
 	ofVec2f coords[8];
 };

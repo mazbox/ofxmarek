@@ -36,3 +36,13 @@ ofPoint getIntersection(ofPoint a1, ofPoint a2, ofPoint b1, ofPoint b2) {
 		return ofPoint((B2*C1 - B1*C2)/det, (A1*C2 - A2*C1)/det);
 	}
 }
+
+
+float pointLineDistance(ofVec2f a, ofVec2f b, ofVec2f p) {
+	
+	// from http://www.softsurfer.com/Archive/algorithm_0102/algorithm_0102.htm#Distance to 2-Point Line
+	return ABS(((a.y - b.y)*p.x + (b.x - a.x)*p.y + (a.x*b.y - b.x*a.y))/
+	sqrt((b.x-a.x)*(b.x-a.x) + (b.y - a.y)*(b.y - a.y))
+	);
+}
+

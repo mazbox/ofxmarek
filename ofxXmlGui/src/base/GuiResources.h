@@ -19,13 +19,14 @@ private:
 	map<string,ofImage*> images;
 	map<string,ofTrueTypeFont*> fonts;
 	
+	
+	ofTrueTypeFont *defaultFont;
+	
+public:
 	// not implemented yet, but basically, if you request a
 	// resource with a prepended global/ it will look it up
 	// in this object
 	static GuiResources globals;
-	ofTrueTypeFont *defaultFont;
-	
-public:
 	GuiResources();
 	ofImage *getImage(string path);
 	ofTrueTypeFont *getFont(string path, int size);

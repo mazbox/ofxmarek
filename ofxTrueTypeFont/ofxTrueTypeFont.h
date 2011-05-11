@@ -37,7 +37,9 @@ public:
 	ofTTFCharacter getCharacterAsPoints(int character);
 	
 	void setWordSpacing(float ws);
+	float getWordSpacing();
 	void setLetterSpacing(float ls);
+	float getLetterSpacing();
 	float getDescenderHeight();
 protected:
 	vector <ofTTFCharacter> charOutlines;
