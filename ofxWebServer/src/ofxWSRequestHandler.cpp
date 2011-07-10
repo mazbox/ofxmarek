@@ -10,7 +10,6 @@
 
 #include "ofxWSRequestHandler.h"
 
-
 void ofxWSRequestHandler::httpResponse(string data) {
 	mg_printf(conn, "%s",data.c_str());
 }

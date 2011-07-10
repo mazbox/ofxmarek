@@ -22,7 +22,7 @@ public:
 	/**
 	 * Loads the file.
 	 */
-	void load(string path);	
+	bool load(string path);	
 	/**
 	 * Saves the file. If you don't pass a parameter, it'll try to 
 	 * save it to the last place it was loaded from.
@@ -66,6 +66,8 @@ public:
 			buf += line;
 		return buf;
 	}
+	
+	void getPropertyKeys(vector<string> &keysOut);
 	
 private:
 	string xmlFilePath;

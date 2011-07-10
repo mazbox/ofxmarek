@@ -227,7 +227,7 @@ public:
 		file->seekg(40, ios::beg);
 		file->read( (char*) &length, sizeof(int) ); // read the size of the data
 		
-		printf("Reading format: l = %d\n", samplerate);
+		//printf("Reading format: l = %d\n", samplerate);
 		length /= sizeof(short);
 		
 
@@ -239,6 +239,7 @@ public:
 	 */
 	bool load(string path) {
 		
+		//printf("Path: %s\n", path.c_str());
 		if(file!=NULL) close();
 		file = new fstream(path.c_str(), ios::in | ios::binary);
 		readFormat();
@@ -255,7 +256,6 @@ public:
 		unload();
 		// bytes to shorts
 		data = new float[length];
-		printf("Allocated data\n");
 		for(int i = 0; i < length; i++) {
 			data[i] = ((float)rawData[i])/32767.f;
 		}

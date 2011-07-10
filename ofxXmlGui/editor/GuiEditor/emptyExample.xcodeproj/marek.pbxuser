@@ -19,7 +19,7 @@
 					20,
 					768,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -34,25 +34,13 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 317672093;
-			PBXWorkspaceStateSaveDate = 317672093;
+			PBXPerProjectTemplateStateSaveDate = 331146515;
+			PBXWorkspaceStateSaveDate = 331146515;
 		};
 		perUserProjectItems = {
 			EA955F1712EF4CCB00B22559 /* PBXTextBookmark */ = EA955F1712EF4CCB00B22559 /* PBXTextBookmark */;
 			EA955F5512EF4E3700B22559 /* PBXTextBookmark */ = EA955F5512EF4E3700B22559 /* PBXTextBookmark */;
-			EA955F6712EF4E9D00B22559 /* PBXTextBookmark */ = EA955F6712EF4E9D00B22559 /* PBXTextBookmark */;
-			EA955F7512EF4EED00B22559 /* PBXTextBookmark */ = EA955F7512EF4EED00B22559 /* PBXTextBookmark */;
-			EA955F9112EF508E00B22559 /* PBXTextBookmark */ = EA955F9112EF508E00B22559 /* PBXTextBookmark */;
-			EA955F9212EF508E00B22559 /* PBXTextBookmark */ = EA955F9212EF508E00B22559 /* PBXTextBookmark */;
-			EA955F9312EF508E00B22559 /* PBXTextBookmark */ = EA955F9312EF508E00B22559 /* PBXTextBookmark */;
-			EA955FA812EF51C600B22559 /* PBXTextBookmark */ = EA955FA812EF51C600B22559 /* PBXTextBookmark */;
-			EA955FDC12EF53AB00B22559 /* PBXTextBookmark */ = EA955FDC12EF53AB00B22559 /* PBXTextBookmark */;
-			EA955FDD12EF53AB00B22559 /* PBXTextBookmark */ = EA955FDD12EF53AB00B22559 /* PBXTextBookmark */;
-			EA955FDE12EF53AB00B22559 /* PBXTextBookmark */ = EA955FDE12EF53AB00B22559 /* PBXTextBookmark */;
-			EA955FED12EF53F600B22559 /* PBXTextBookmark */ = EA955FED12EF53F600B22559 /* PBXTextBookmark */;
 			EA955FFB12EF55FC00B22559 /* PBXTextBookmark */ = EA955FFB12EF55FC00B22559 /* PBXTextBookmark */;
-			EA955FFC12EF55FC00B22559 /* PBXBookmark */ = EA955FFC12EF55FC00B22559 /* PBXBookmark */;
-			EA95600512EF58B200B22559 /* PBXTextBookmark */ = EA95600512EF58B200B22559 /* PBXTextBookmark */;
 		};
 		sourceControlManager = EA955E5112EF4AA000B22559 /* Source Control */;
 		userBuildSettings = {
@@ -218,11 +206,6 @@
 		name = testApp.cpp;
 		path = /Work/openFrameworks/apps/ofxXmlGui/Editor/src/testApp.cpp;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {866, 1456}}";
-			sepNavSelRange = "{2303, 0}";
-			sepNavVisRange = "{1773, 694}";
-		};
 	};
 	EA955F5512EF4E3700B22559 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -234,106 +217,6 @@
 		vrLen = 694;
 		vrLoc = 1773;
 	};
-	EA955F6712EF4E9D00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EC312EF4B4400B22559 /* GuiBuilderHierarchy.h */;
-		name = "GuiBuilderHierarchy.h: 29";
-		rLen = 0;
-		rLoc = 546;
-		rType = 0;
-		vrLen = 1164;
-		vrLoc = 524;
-	};
-	EA955F7512EF4EED00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EC412EF4B4400B22559 /* GuiBuilderInspector.h */;
-		name = "GuiBuilderInspector.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1109;
-		vrLoc = 0;
-	};
-	EA955F9112EF508E00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EBB12EF4B4400B22559 /* GuiControl.cpp */;
-		name = "GuiControl.cpp: 229";
-		rLen = 0;
-		rLoc = 5356;
-		rType = 0;
-		vrLen = 1151;
-		vrLoc = 3227;
-	};
-	EA955F9212EF508E00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EBC12EF4B4400B22559 /* GuiControl.h */;
-		name = "GuiControl.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1663;
-		vrLoc = 2732;
-	};
-	EA955F9312EF508E00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EBA12EF4B4400B22559 /* GuiContainer.h */;
-		name = "GuiContainer.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1207;
-		vrLoc = 1490;
-	};
-	EA955FA812EF51C600B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EB912EF4B4400B22559 /* GuiContainer.cpp */;
-		name = "GuiContainer.cpp: 292";
-		rLen = 0;
-		rLoc = 6857;
-		rType = 0;
-		vrLen = 1268;
-		vrLoc = 6496;
-	};
-	EA955FDC12EF53AB00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EC512EF4B4400B22559 /* GuiBuilderMenu.cpp */;
-		name = "GuiBuilderMenu.cpp: 27";
-		rLen = 0;
-		rLoc = 700;
-		rType = 0;
-		vrLen = 1327;
-		vrLoc = 0;
-	};
-	EA955FDD12EF53AB00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EC912EF4B4400B22559 /* GuiMenu.h */;
-		name = "GuiMenu.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 472;
-		vrLoc = 0;
-	};
-	EA955FDE12EF53AB00B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EC812EF4B4400B22559 /* GuiMenu.cpp */;
-		name = "GuiMenu.cpp: 18";
-		rLen = 0;
-		rLoc = 275;
-		rType = 0;
-		vrLen = 1333;
-		vrLoc = 759;
-	};
-	EA955FED12EF53F600B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955EC612EF4B4400B22559 /* GuiBuilderMenu.h */;
-		name = "GuiBuilderMenu.h: 163";
-		rLen = 0;
-		rLoc = 3545;
-		rType = 0;
-		vrLen = 981;
-		vrLoc = 2743;
-	};
 	EA955FFB12EF55FC00B22559 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
@@ -343,19 +226,5 @@
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 0;
-	};
-	EA955FFC12EF55FC00B22559 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = EA955ED312EF4B4400B22559 /* GuiGrid.h */;
-	};
-	EA95600512EF58B200B22559 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = EA955ED312EF4B4400B22559 /* GuiGrid.h */;
-		name = "GuiGrid.h: 88";
-		rLen = 0;
-		rLoc = 1594;
-		rType = 0;
-		vrLen = 1019;
-		vrLoc = 793;
 	};
 }

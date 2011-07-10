@@ -1,6 +1,5 @@
 /*
  *  Properties.cpp
- *  FordSMax
  *
  *  Created by Marek Bereza on 25/07/2010.
  *  Copyright 2010 Marek Bereza. All rights reserved.
@@ -12,11 +11,13 @@
 /**
  * Loads the file.
  */
-void Properties::load(string path) {
+bool Properties::load(string path) {
 	xmlFilePath = path;
 	data.clear();
 	ofxXmlSettings xml;
-	xml.loadFile(xmlFilePath);
+	if(!xml.loadFile(xmlFilePath)) {
+		return false;
+	}
 	
 	xml.pushTag("properties");
 	int numProps = xml.getNumTags("property");
@@ -25,6 +26,7 @@ void Properties::load(string path) {
 		string value = xml.getAttribute("property", "value", "", i);
 		data[key] = value;
 	}
+	return true;
 }
 
 
@@ -54,4 +56,11 @@ bool Properties::save(string path) {
 	}
 	xml.saveFile(xmlFilePath);
 	return true;
+}
+
+void Properties::getPropertyKeys(vector<string> &keysOut) {
+	map<string,string>::iterator it;
+	for ( it=data.begin() ; it != data.end(); it++ ) {
+		keysOut.push_back((*it).first);
+	}
 }
