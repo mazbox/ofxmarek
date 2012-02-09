@@ -84,14 +84,6 @@ unsigned char *KinectOrCamera::getPixels() {
 		return camera.getPixels();
 	}
 }
-unsigned char *KinectOrCamera::getCalibratedPixels() {
-	if(usingKinect) {
-		return kinect.getCalibratedRGBPixels();
-	} else {
-		return camera.getPixels();
-	}
-}
-
 unsigned char *KinectOrCamera::getDepthPixels() {
 	if(usingKinect) {
 		return kinect.getDepthPixels();

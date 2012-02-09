@@ -22,7 +22,7 @@ public:
 	/**
 	 * Loads the file.
 	 */
-	bool load(string path);	
+	void load(string path);	
 	/**
 	 * Saves the file. If you don't pass a parameter, it'll try to 
 	 * save it to the last place it was loaded from.

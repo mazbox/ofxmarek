@@ -1,38 +1,64 @@
 
 body {
-	background-color:black;
+	background-color:#999999;
 	color:white;
-	font-family:Helvetica,arial,sans-serif;
+	font-family:"Lucida Grande", sans-serif;
 
 }
+h1, h2, h3 {
+color:#333333;
+font-family:helvetica, sans-serif;
+font-weight:900;
+}
+
+h1, h2 {
+	text-transform:uppercase;
+	letter-spacing:-1px;
+}
+
 h1 {
-	font-weight:normal;
 	font-size:1.5em;
-	color:#AA0000;
+
 }
 h2 {
-	font-weight:normal;
 	font-size:1.2em;
-	color:#AA0000;
+	padding-top:0.6em;
+	margin-left:15px;
 }
 
-h3 {
+h3 .val {
 	font-weight:normal;
-	font-size:0.8em;
-	color:white;
+	color:#999999;
+}
+h3 {
+	font-weight:bold;
+	font-size:0.6em;
+	margin-top:1em;
+	margin-bottom:0.4em;
 }
 
 .control {
-	border:1px red solid;
+	background-color:#777777;
 	cursor:pointer;
+	border-radius:3px;
+}
+
+.section {
+	background-color:#DDDDDD;
+	width:235px;
+	border-radius:10px;
+	padding-bottom:1em;
+	box-shadow: 3px 3px 10px #666666;
 }
 	
 .SliderInt, .SliderFloat, .Slider2d, .Slider3d, .ColorPicker {
 	width:200px;
+	
 }
 
 .SliderInt, .SliderFloat, .Toggle, .Button {
 	height:30px;
+	box-shadow:inset 0 0 10px #444444;
 }
 .Slider2D {
 	height:200px;
@@ -48,16 +74,35 @@ h3 {
 .zHandle,
 .Slider2dHandle,
 .SliderHandle {
-	background-color:#00FF00;
+	background-color:#5599CC;
+	border-radius:3px;
+}
+xHandle:hover,
+.yHandle:hover,
+.zHandle:hover,
+.Slider2dHandle:hover,
+.SliderHandle:hover {
+	background-color:#5599FF;
+
 }
 
 .ColorPicker {
 	height: 120px;
 }
 .Toggle, .Button {
-	width:60px;
+	width:20px;
+	height: 20px;
+	padding:5px;
 }
-		
+
+.Toggle .tick {
+	width:20px;
+	height:20px;
+	border-radius:3px;
+	background-color:#5599CC;
+}
+
+
 .xHandle,
 .yHandle,
 .zHandle,
@@ -91,11 +136,14 @@ h3 {
 
 
 ul {
-	border-top:1px white solid;
 	list-style:none;
 	margin:0;
 	padding:0;
 }
+li {
+list-style:none;
+}
 li ul li {
 	padding-left:1em;
 }
+

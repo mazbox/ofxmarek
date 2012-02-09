@@ -4,7 +4,6 @@ void mareklib::drawFramerate(int color) {
 	ofSetHexColor(color);
 	ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, ofGetHeight()-20);
 }
-
 void mareklib::setDataPathRootToAppContents() {
 	char path[512];
 	getcwd(path, 512);

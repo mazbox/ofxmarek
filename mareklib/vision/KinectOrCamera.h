@@ -32,7 +32,6 @@ public:
 	
 	ofPixelsRef			getPixelsRef();
 	unsigned char *getPixels();
-	unsigned char *getCalibratedPixels();
 	unsigned char *getDepthPixels();
 	void setUseTexture(bool bUseTex) { bUseTexture = bUseTex; };
 	ofTexture &getTextureReference() { return tex; }

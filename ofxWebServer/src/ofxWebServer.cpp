@@ -29,12 +29,41 @@ void ipLongToString(long ipLong, char *ipString) {
 
 void handleMultipart(ofxWSRequestHandler *handler, const struct mg_request_info *info) {
 	printf("It's multipart! - post data length %d\n",info->post_data_len);
-	char dat[info->post_data_len+1];
-	memcpy(dat, info->post_data, info->post_data_len+1);
+	
+	string type = "";
+	for(int i = 0; i < info->num_headers; i++) {
+		string name = info->http_headers[i].name;
+		name = ofToLower(name);
+		if(name.find("content-type")==0) {
+			type = info->http_headers[i].value;
+			break;
+			//printf("%s -> %s\n", info->http_headers[i].name, info->http_headers[i].value);
+		}
+	}
+	if(type=="") return;
+	
+	
+	
+	int bp = type.find("boundary=");
+	
+	if (bp==-1) {
+		return;
+	}
+	
+	string boundary = std::string("--") + type.substr(bp + 9, type.length() - bp);
+	printf("boundary: %s\n", boundary.c_str());
+	
+	/*char *dat = new char [info->post_data_len+1];
+	
+	
+	memcpy(dat, info->post_data, info->post_data_len);
 	printf("%s\n", dat);
+	 */
 	for(int i = 0; i < info->num_headers; i++) {
 		printf("%s -> %s\n", info->http_headers[i].name, info->http_headers[i].value);
 	}
+	/*
+	delete dat;*/
 }
 
 // callback from server
@@ -48,21 +77,15 @@ void webserverCallback(struct mg_connection *conn,
 		
 	((ofxWSRequestHandler*)user_data)->setConnection(conn, "", query);
 	
-	if(strcmp(info->request_method,"GET")==0 || strcmp(info->request_method,"get")) {
+	string method = info->request_method;
+	method = ofToLower(method);
+	
+	if(method=="get") {
 		
-
 		
-		for(int i = 0; i < info->num_headers; i++) {
-			if(strcmp(info->http_headers[i].name, "Content-Type")==0) {
-				string v = info->http_headers[i].value;
-				if(v.find("multipart/form-data")==0) {
-					handleMultipart(((ofxWSRequestHandler*)user_data), info);
-
-					return;
-				}
-			}
-		}
 		
+		
+		printf("--->Get\n");
 
 		// if it's not multipart data, we've just got a normal GET going on.
 		((ofxWSRequestHandler*)user_data)->httpGet(info->uri);
@@ -71,6 +94,14 @@ void webserverCallback(struct mg_connection *conn,
 		
 
 	} else if(strcmp(info->request_method,"POST")==0 || strcmp(info->request_method,"post")) {
+		for(int i = 0; i < info->num_headers; i++) {
+			if(strcmp(info->http_headers[i].name, "Content-Type")==0) {
+				string type = info->http_headers[i].value;
+				if(type.find("multipart/form-data")==0) {
+					handleMultipart(((ofxWSRequestHandler*)user_data), info);
+				}
+			}
+		}
 		((ofxWSRequestHandler*)user_data)->httpPost(info->uri, info->post_data, info->post_data_len);
 	} else {
 		printf("ofxWebServer: unhandled '%s' request method\n", info->request_method);

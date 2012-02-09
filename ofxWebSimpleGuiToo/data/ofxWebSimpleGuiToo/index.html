@@ -1,8 +1,12 @@
 <html>
 <head>
 <title>ofxWebSimpleGuiToo</title>
-<link type="text/css" rel="stylesheet" media="all" href="gui.css" /> 
-<script language="javascript" src="jquery-1.4.2.js"></script>
+<!--<meta name="viewport" content="initial-scale=2;user-scalable=no" />-->
+<meta name="viewport" content="width=250px;user-scalable=no" />
+
+
+<link type="text/css" rel="stylesheet" media="all" href="gui.css" />
+<script language="javascript" src="jquery-1.7.1.min.js"></script>
 <script language="javascript" src="oo.js"></script>
 <script language="javascript" src="gui.js"></script>
 
@@ -14,11 +18,11 @@ $(document).ready(function() {
 		$("body").append('<li id="pages"></li>');
 		for(i = 1; i < gui.length; i++) {
 			var pageId = 'page'+i;
-			$("#pages").append('<h2>'+gui[i].name+'</h2><ul id="'+pageId+'"></ul>');
+			$("#pages").append('<div class="section"><h2>'+gui[i].name+'</h2><ul id="'+pageId+'"></ul>');
 			for(j = 0; j < gui[i].controls.length; j++) {
 				createControl(gui[i].controls[j], pageId);
-	
 			}
+			$("#pages").append("</div>");
 		}
 	});
 });
@@ -30,7 +34,7 @@ $(document).ready(function() {
 </head>
 <body>
 
-<h1>ofx Control</h1>
+<h1>ofxControl</h1>
 <hr />
 
 </body>

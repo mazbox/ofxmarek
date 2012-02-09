@@ -27,6 +27,12 @@ protected:
 	 */
 	void httpResponse(string data);
 	
+	void httpResponse(string mimeType, string data);
+	/**
+	 * Use this in your httpGet/Post to redirect the user afterwards
+	 */
+	void httpRedirect(string url);
+	
 	/**
 	 * If you want to write raw data to the response, use this.
 	 */
@@ -41,6 +47,11 @@ protected:
 	 * gets a parameter from the request.
 	 */
 	string getRequestParameter(string name);
+
+	/**
+	 * Gets all the parameters at once, in a map
+	 */
+	map<string,string> getRequestParameters();
 	
 	/**
 	 * returns the query string from the request

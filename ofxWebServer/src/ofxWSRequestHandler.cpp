@@ -11,7 +11,11 @@
 #include "ofxWSRequestHandler.h"
 
 void ofxWSRequestHandler::httpResponse(string data) {
-	mg_printf(conn, "%s",data.c_str());
+	mg_printf(conn, "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n%s",data.c_str());
+}
+
+void ofxWSRequestHandler::httpResponse(string mimeType, string data) {
+	mg_printf(conn, "HTTP/1.1 200 OK\r\nContent-Type: %s\r\n\r\n%s",mimeType.c_str(), data.c_str());
 }
 
 
@@ -19,7 +23,12 @@ void ofxWSRequestHandler::httpResponseData(char *data, int length) {
 	mg_write(conn, (const void *)data, length);
 }
 
-
+void ofxWSRequestHandler::httpRedirect(string url) {
+	// a bit hacky but have no internet right now, so this is good for now
+	string refr = "<html><head><meta HTTP-EQUIV=\"REFRESH\" content=\"0; url=";
+	refr += url + "\"></head></html>\r\n";
+	httpResponse(refr);
+}
 /**
  * Returns the client's ip address
  */
@@ -45,6 +54,26 @@ string ofxWSRequestHandler::getRequestParameter(string name) {
 	return result;
 }
 
+map<string,string> ofxWSRequestHandler::getRequestParameters() {
+	map<string,string> params;
+	if(query!="") {
+		vector<string> s = ofSplitString(query, "&");
+		for(int i = 0; i < s.size(); i++) {
+			
+			vector<string> keyvalue = ofSplitString(s[i], "=");
+			if(keyvalue.size()>1) {
+				string key = keyvalue[0];
+				string value = keyvalue[1];
+				printf("%s = %s\n", key.c_str(), value.c_str());
+				params[key] = value;
+			} else {
+				params[s[i]] = "";
+			}
+		}
+	}
+	return params;
+	
+}
 /**
  * returns the query string from the request
  */

@@ -71,6 +71,10 @@ public:
 		
 	}
 	
+	vector<string> getKeys() {
+		return getMemberNames();
+	}
+	
 	bool saveToFile(string path) {
 		
 		

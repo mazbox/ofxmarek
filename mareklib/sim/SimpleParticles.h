@@ -1,4 +1,3 @@
-template<typename T>
 class Particles {
 public:
 
@@ -6,13 +5,13 @@ public:
 		pos = 0;
 		maxAge = 50;
 		numParticles = 1000;
-		positions = new T[numParticles];
-		velocities = new T[numParticles];
+		positions = new ofVec2f[numParticles];
+		velocities = new ofVec2f[numParticles];
 		ages = new int[numParticles];
 		
 		for(int i = 0; i < numParticles; i++) {
-			positions[i] = T(-10, -10);
-			velocities[i] = T(0, 0);
+			positions[i] = ofVec2f(-10, -10);
+			velocities[i] = ofVec2f(0, 0);
 			ages[i] = maxAge;
 		}
 	}
@@ -23,8 +22,8 @@ public:
 	}
 	void spawn(float x, float y, float dx, float dy) {
 		ages[pos] = 0;
-		positions[pos] = T(x, y);
-		velocities[pos] = T(dx, dy);
+		positions[pos] = ofVec2f(x, y);
+		velocities[pos] = ofVec2f(dx, dy);
 		
 		pos++;
 		pos %= numParticles;
@@ -51,7 +50,7 @@ private:
 	int pos;
 	int numParticles;
 	
-	T *positions;
-	T *velocities;
+	ofVec2f *positions;
+	ofVec2f *velocities;
 	int *ages;
 };

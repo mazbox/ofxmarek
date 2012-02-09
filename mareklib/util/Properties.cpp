@@ -11,13 +11,11 @@
 /**
  * Loads the file.
  */
-bool Properties::load(string path) {
+void Properties::load(string path) {
 	xmlFilePath = path;
 	data.clear();
 	ofxXmlSettings xml;
-	if(!xml.loadFile(xmlFilePath)) {
-		return false;
-	}
+	xml.loadFile(xmlFilePath);
 	
 	xml.pushTag("properties");
 	int numProps = xml.getNumTags("property");
@@ -26,7 +24,6 @@ bool Properties::load(string path) {
 		string value = xml.getAttribute("property", "value", "", i);
 		data[key] = value;
 	}
-	return true;
 }
 
 
